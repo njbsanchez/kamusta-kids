@@ -1,0 +1,86 @@
+{% extends 'base.html' %} {% block title %}Kamusta Kids{% endblock %}
+<head> 
+	<style>
+		.h1 {
+			font-family: Suez One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 36px;
+			line-height: 47px;
+			color: #FFFFFF;
+		}
+		.h3 {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 36px;
+			/* or 200% */
+			color: #FFFFFF;
+		}
+	</style>
+</head>
+
+<body>
+	{% block body%}
+	<div class="row gx-4 gx-lg-5 align-items-center my-5" style="background: #5E719B">
+		<div class="col-lg-6"><img style="width: 100%" src="https://i.ibb.co/ZJ7QWmg/1-Tusik-Only.png" alt="1-Tusik-Only" border="0"></div>
+		<div class="col-lg-4 col-sm-offset-1" >
+			<h1 class="font-weight-light">Explore the rich Filipino heritage</h1>
+			<p>Learn the Filipino language and ethnic customs through fun challenges and engaging small group lessons. Kamusta Kids offers virtual classes for children ages 4-11.</p>
+			<button href="#" class="button">Enroll Today</button>
+		</div>
+	</div>
+	
+	<div class="container-fluid center" style="text-align:center">
+	<img src="https://i.postimg.cc/prXbSQ0T/vendor-header.png" class:"center">
+	</div>
+
+	<div class="container border-dark p-50">
+		<p></p>
+	</div>
+
+	<div class="container border-dark p-200">
+		<h3>Quick Start</h3>
+		<h5>Navigate below to record new activity to inventory.</h5>
+		<div class="row row-cols-1 row-cols-md-2 g-4 border-dark">
+			<div class="col-sm-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Record New Intake</h5>
+						<p class="card-text">
+							Recieved new shipment of product? Create a new intake record.
+						</p>
+						<a href="#" class="btn btn-primary">Add Intake</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Record New Sale</h5>
+						<p class="card-text">
+							Customer purchase = New Sale! Log a new sale invoice here.
+						</p>
+						<a href="#" class="btn btn-primary">Log New Sale</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Record New Sample</h5>
+						<p class="card-text">
+							Sample Check-Out or Samples Returned? Record movement here.
+						</p>
+						<a href="#" class="btn btn-primary">Track Sample Movement</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	</div>
+	{% endblock %}
+</body>

@@ -1,15 +1,68 @@
+<head>
+    <style>
+        div {
+            
+        }
+        .footer {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            color: white;
+        }
+        a:link {
+            text-decoration:none;
+            color: white;
+            background-color:transparent;
+        }
+        a:hover {
+            text-decoration:none;
+            color: white;
+            background-color:transparent;
+            font-weight: bold;
+        }
+        a:visited {
+            text-decoration:none;
+            color: white;
+            background-color:transparent;
+        }
+        a:active {
+            text-decoration:none;
+            color: white;
+            background-color:transparent;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
 <br><br>
 <div id="footer">
     {% block footer %}
-    <br>
-    <hr>
-    <div class="row" width="100%" style="padding:30px;">
-        <div class="col-sm-6 pull-left">
-            <p class="text-muted"><small>&copy; 2021 NJB </small></p>
-        </div>
-        <div class="col-sm-6">
-            <div class="pull-right">
-                <p class="text-muted"><small><a href="#">Inventory Tracker • developer version 0.0.1-alpha</a></small></p>
+    <div class="row align-items-center px-50" style="background: #5E719B">
+        <div class="container-fluid footer">
+            <div class="col-sm-2 col-sm-offset-1">
+                <div class="row"><b>About</b></a></div>
+                <div class="row"><a href="#">Mission</a></div>
+                <div class="row"><a href="#">Team</a></div>
+                <div class="row"><a href="#">Teaching Process</a></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="row"><b>Services</b></a></div>
+                <div class="row"><a href="#">Courses</a></div>
+                <div class="row"><a href="#">Registration</a></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="row"><b>Contact</b></a></div>
+                <div class="row"><a href="#">Request info</a></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row"><b>Legal</b></a></div>
+                <div class="row"><a href="#">Term of Service</a></div>
+                <div class="row"><a href="#">Privacy Policy</a></div>
+                <div class="row">  © 2021 Kamusta Kids. All rights reserved.</a></div>
+            </div>
+            <div class="col-sm-1">
+                <div class="pull-right">
+                    <img src="https://i.ibb.co/0DqRPW6/Logo-Monogram.png" alt="Logo-Monogram" border="0">
+                </div>
             </div>
         </div>
     </div>

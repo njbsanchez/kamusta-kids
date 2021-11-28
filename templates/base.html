@@ -3,6 +3,12 @@
 <html lang="en">
 	<head>
 		<style>
+			.mr-auto {
+				flex: 1;
+				margin: auto !important;
+				display: flex;
+				justify-content: space-between;
+			}
 			.h1,
 			.h2,
 			.h3,
@@ -16,7 +22,7 @@
 				table-layout: fixed;
 			}
 			.button {
-				background-color: #F5D015;
+				background-color: #f5d015;
 				border: none;
 				color: w;
 				padding: 10px 20px;
@@ -73,43 +79,57 @@
 		{% block head %}{% endblock %}
 	</head>
 
-			<nav class="navbar navbar-expand navbar-light bg-light">
-			<div class="container-fluid">
-				<a class="navbar-brand d-flex align-items-center justify-content-between" href="/">
-					<img src="https://i.ibb.co/DQLNtY6/Logo-Title.png" alt="Logo-Title" border="0"></a>
-					<span class="h4 ps-1 mb-0">K</span>
-				</a>
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a href="#" class="nav-link"> Home </a>
-					</li>
-
-					<li class="nav-item">
-						<a href="#" class="nav-link"> About </a>
-					</li>
-
-					<li class="nav-item">
-						<a href="#" class="nav-link"> How Learning Works </a>
-					</li>
-
-					<li class="nav-item">
-						<a href="#" class="nav-link"> Courses </a>
-					</li>
-
-					<li class="nav-item">
-						<a href="#" class="nav-link"> Request Info </a>
-					</li>
-
-					<li class="nav-item">
-						<button href="#" class="button">Enroll</button>
-					</li>
-				</ul>
+	<nav class="navbar navbar-expand navbar-light bg-light mr-auto nav-justified">
+		<div class="container-fluid mr-auto nav-justified">
+			<div
+				class="col-lg-3"
+				style="
+					padding-top: 20px;
+					padding-right: 30px;
+					padding-bottom: 20px;
+					padding-left: 80px;
+				"
+			>
+				<div class="row  justify-content-center">
+					<img
+						src="https://i.ibb.co/DQLNtY6/Logo-Title.png"
+						alt="Logo-Title"
+						style="width: 70%"
+					/>
+				</div>
+				<div class="row">
+					<span class="h4 text-center">Filipino Language E-Classes</span>
+				</div>
 			</div>
-		</nav>
-		
-	<header class="text-dark container-fluid">
+			<ul class="navbar-nav nav-justified">
+				<li class="nav-item">
+					<a href="#" class="nav-link"> Home </a>
+				</li>
 
-		
+				<li class="nav-item">
+					<a href="#" class="nav-link"> About </a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link"> How Learning Works </a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link"> Courses </a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="nav-link"> Request Info </a>
+				</li>
+
+				<li class="nav-item">
+					<button href="#" class="button">Enroll</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<header class="text-dark container-fluid">
 		{% with messages = get_flashed_messages() %} {% if messages %}
 		<ul class="flashes">
 			{% for message in messages %}

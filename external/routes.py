@@ -12,7 +12,7 @@ def go_homepage():
 @app.route("/about")
 def go_about():
     """dummy development page"""
-    return render_template("coming_soon.html")
+    return render_template("aboutus.html")
 
 @app.route("/how-learning-works")
 def go_learning():

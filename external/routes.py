@@ -17,12 +17,12 @@ def go_about():
 @app.route("/how-learning-works")
 def go_learning():
     """dummy development page"""
-    return render_template("coming_soon.html")
+    return render_template("learningworks.html")
 
 @app.route("/courses")
 def go_courses():
     """dummy development page"""
-    return render_template("coming_soon.html")
+    return render_template("courses.html")
 
 @app.route("/request-info")
 def request_info():

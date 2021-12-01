@@ -2,16 +2,33 @@
 
 <html lang="en">
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 		<style>
-			body {
+
+		
+			div {
 				font-family: Poppins;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 18px;
 				line-height: 36px;
-				color: #000000;
 			}
-
+			.nav-text {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+			}
+			.logo-text {
+				font-size: 14px;
+			}
 			.mr-auto {
 				flex: 1;
 				margin: auto !important;
@@ -27,10 +44,8 @@
 				margin-top: 1px;
 				margin-bottom: 1px;
 			}
-			table {
-				table-layout: fixed;
-			}
-			.button {
+			
+			.enroll {
 				background-color: #f5d015;
 				border: none;
 				color: w;
@@ -38,9 +53,25 @@
 				text-align: center;
 				text-decoration: none;
 				display: inline-block;
-				margin: 4px 2px;
+				margin: 4px 4px;
 				cursor: pointer;
-				border-radius: 16px;
+				border-radius: 70px;
+				box-shadow: 0px 5px 0px #E2AB19;
+			}
+			.yellowButton {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: bold;
+				background-color: #f5d015;
+				border: none;
+				color: w;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				margin: 4px 4px;
+				cursor: pointer;
+				border-radius: 70px;
 			}
 			body {
 				background-image: url("https://i.ibb.co/S60Kg7y/Untitled-design-4.png");
@@ -97,44 +128,43 @@
 			<div
 				class="col-lg-3"
 				style="
-					padding-top: 10px;
-					padding-bottom: 5px;
+					padding-top: 5px;
 				"
 			>
 				<div class="row justify-content-center">
 					<img
 						src="https://i.ibb.co/DQLNtY6/Logo-Title.png"
 						alt="Logo-Title"
-						style="width: 50%"
+						style="width: 40%"
 					/>
 				</div>
 				<div class="row">
-					<span class="h4 text-center">Filipino Language E-Classes</span>
+					<span class="logo-text text-center">Filipino Language E-Classes</span>
 				</div>
 			</div>
 			<ul class="navbar-nav nav-justified" style="font-weight: bold;">
 				<li class="nav-item">
-					<a href="/" class="nav-link"> Home </a>
+					<a href="/" class="nav-link nav-text"><b> Home </b></a>
 				</li>
 
 				<li class="nav-item">
-					<a href="/about" class="nav-link"> About </a>
+					<a href="/about" class="nav-link navText"> About </a>
 				</li>
 
 				<li class="nav-item">
-					<a href="/how-learning-works" class="nav-link"> How Learning Works </a>
+					<a href="/how-learning-works" class="nav-link navText"> How Learning Works </a>
 				</li>
 
 				<li class="nav-item">
-					<a href="/courses" class="nav-link"> Courses </a>
+					<a href="/courses" class="nav-link navText"> Courses </a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#" class="nav-link"> Request Info </a>
+					<a href="#" class="nav-link navText"> Request Info </a>
 				</li>
 
 				<li class="nav-item">
-					<button href="#" class="button">Enroll</button>
+					<button href="#" class="enroll navText">Enroll</button>
 				</li>
 			</ul>
 		</div>

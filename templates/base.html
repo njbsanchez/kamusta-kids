@@ -8,76 +8,6 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-		<style>
-
-		
-			div {
-				font-family: Poppins;
-				font-style: normal;
-				font-weight: normal;
-				font-size: 18px;
-				line-height: 36px;
-			}
-			.nav-text {
-				font-family: Poppins;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 16px;
-				line-height: 24px;
-				text-align: center;
-			}
-			.logo-text {
-				font-size: 14px;
-			}
-			.mr-auto {
-				flex: 1;
-				margin: auto !important;
-				display: flex;
-				justify-content: space-between;
-			}
-			.h1,
-			.h2,
-			.h3,
-			h1,
-			h2,
-			h3 {
-				margin-top: 1px;
-				margin-bottom: 1px;
-			}
-			
-			.enroll {
-				background-color: #f5d015;
-				border: none;
-				color: w;
-				padding: 10px 20px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				margin: 4px 4px;
-				cursor: pointer;
-				border-radius: 70px;
-				box-shadow: 0px 5px 0px #E2AB19;
-			}
-			.yellowButton {
-				font-family: Poppins;
-				font-style: normal;
-				font-weight: bold;
-				background-color: #f5d015;
-				border: none;
-				color: w;
-				padding: 10px 20px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				margin: 4px 4px;
-				cursor: pointer;
-				border-radius: 70px;
-			}
-			body {
-				background-image: url("https://i.ibb.co/S60Kg7y/Untitled-design-4.png");
-				background-repeat: repeat-y;
-			}
-		</style>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link
@@ -97,38 +27,96 @@
 			crossorigin="anonymous"
 		></script>
 
-		{#
-		<script
-			crossorigin
-			src="https://unpkg.com/react@17/umd/react.development.js"
-		></script>
-		<script
-			crossorigin
-			src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-		></script>
-		#}
-		<script
-			crossorigin
-			src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
-		></script>
-		{#
-		<script
-			crossorigin
-			src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"
-		></script>
-		#}
+		
+		<style>
 
+			body {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 36px;
+			}
+			h1 {
+				font-family: Suez One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 36px;
+				line-height: 47px;
+			}
+			.white-out {
+				color: #FFFFFF;
+			}
+			.nav-text {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 24px;
+				text-align: center;
+			}
+			.logo-text {
+				font-size: 14px;
+			}
+			.mr-auto {
+				
+				margin: auto !important;
+				display: flex;
+				justify-content: space-between;
+			}
+			.enroll {
+				background-color: #f5d015;
+				border: none;
+				color: w;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				margin: 4px 4px;
+				cursor: pointer;
+				border-radius: 70px;
+				box-shadow: 0px 5px 0px #E2AB19;
+			}
+			.yellowButton {
+				width: 269.17px;
+				height: 60px;
+				left: 798.29px;
+				top: 435px;
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: bold;
+				background-color: #f5d015;
+				border: none;
+				color: w;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				margin: 4px 4px;
+				cursor: pointer;
+				border-radius: 70px;
+				box-shadow: 0px 5px 0px #E2AB19;
+			}
+			body {
+				background-image: url("https://i.ibb.co/S60Kg7y/Untitled-design-4.png");
+				background-repeat: repeat-y;
+			}
+			
+		</style>
+		
+	
 		<title>{% block title%}{% endblock %}</title>
 
 		{% block head %}{% endblock %}
 	</head>
 
 	<nav class="navbar navbar-expand navbar-light bg-light mr-auto nav-justified">
-		<div class="container-fluid mr-auto nav-justified">
+		<div class="container-fluid  nav-justified">
 			<div
 				class="col-lg-3"
 				style="
-					padding-top: 5px;
+					padding-top: 0px;
+					padding-bottom: -5px;
 				"
 			>
 				<div class="row justify-content-center">
@@ -138,33 +126,33 @@
 						style="width: 40%"
 					/>
 				</div>
-				<div class="row">
+				<div class="row p-0">
 					<span class="logo-text text-center">Filipino Language E-Classes</span>
 				</div>
 			</div>
-			<ul class="navbar-nav nav-justified" style="font-weight: bold;">
+			<ul class="navbar-nav nav-justified nav-text" style="font-weight: bold;">
 				<li class="nav-item">
-					<a href="/" class="nav-link nav-text"><b> Home </b></a>
+					<a href="/" class="nav-link "><b> Home </b></a>
 				</li>
 
 				<li class="nav-item">
-					<a href="/about" class="nav-link navText"> About </a>
+					<a href="/about" class="nav-link"><b> About</b> </a>
 				</li>
 
 				<li class="nav-item">
-					<a href="/how-learning-works" class="nav-link navText"> How Learning Works </a>
+					<a href="/how-learning-works" class="nav-link navText"><b> How Learning Works</b> </a>
 				</li>
 
 				<li class="nav-item">
-					<a href="/courses" class="nav-link navText"> Courses </a>
+					<a href="/courses" class="nav-link navText"><b> Courses </b></a>
 				</li>
 
 				<li class="nav-item">
-					<a href="#" class="nav-link navText"> Request Info </a>
+					<a href="#" class="nav-link navText"><b> Request Info </b></a>
 				</li>
 
 				<li class="nav-item">
-					<button href="#" class="enroll navText">Enroll</button>
+					<button href="#" class="enroll navText"><b>Enroll</b></button>
 				</li>
 			</ul>
 		</div>

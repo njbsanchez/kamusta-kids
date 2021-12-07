@@ -1,6 +1,12 @@
 {% extends 'base.html' %} {% block title %}Courses{% endblock %}
 <head> 
 	<style>
+		
+		div {
+			padding-top:0px; 
+			padding-bottom:0px;
+		}
+		
 		.center {
 			display: block;
 			margin-left: auto;
@@ -17,55 +23,76 @@
 			color: #FFFFFF;
 		}
 
+		
 		.white-out {
 			color: #FFFFFF;
 		}
-
 
 		.right-side {
 			text-align: right;
 		}
 
+		.class-category {
+			text-align: center;
+			background: #5E719B;
+			border-radius: 5px;
+			color: #FFFFFF;
+		}
+
+		.class_level {
+			
+			background: #675E9B;
+			border-radius: 5px;
+			color: #FFFFFF;
+		}
 	</style>
 </head>
 
 <body>
 	{% block body%}
-	<div class="row align-items-center" style="background: #5E719B">
-		<div class="col-lg-6"><img src="https://i.ibb.co/7SCzDN0/1-Jerry-Wang.png" alt="1-Jerry-Wang" style="width:100%" border="0"></div>
-		<div class="col-lg-4 col-sm-offset-1" >
-			<h1>Courses</h1>
-			<h3>Our virtual Tagalog lessons cover practical themes to reinforce speaking at home. As well as, ethnic customs to explore Filipino roots.</h3>
+	<div class="row align-items-center" style="background-color: #5E719B; padding-top:0px; padding-bottom:0px;">
+		<div class="col-lg-6"><img src="https://i.ibb.co/7SCzDN0/1-Jerry-Wang.png" alt="1-Jerry-Wang" style="width:100%" border="10" ></div>
+		<div class="col-lg-6"style="background-color: #5E719B; padding-top:0px; padding-bottom:0px;" >
+			<div class="container-fluid p-5 "style="background-color: #5E719B; padding-top:0px; padding-bottom:0px;">
+				<h1 class="white-out">Courses</h1>
+				<p class="white-out">Our virtual Tagalog lessons cover practical themes to reinforce speaking at home. As well as, ethnic customs to explore Filipino roots.</p>
+			</div>
 		</div>
 	</div>
 	
 	<div class="row gx-4 gx-lg-5 align-items-center my-5">
 		<div class="col-lg-8 col-sm-offset-2" >
-			<div class="container" style="background: #5E719B; text-align: center;"><h1>All Courses</h1>
+			<div class="container white-out" style="text-align: center;
+			background: #5E719B;
+			border-radius: 5px;
+			color: #FFFFFF;"><h1>All Courses</h1>
 			</div>
 		</div>
 	</div>
 	<div class="row align-items-center">
 		<div class="col-lg-8 col-sm-offset-2">
-			<div class="container" style="background: #5E719B;">
+			<div class="container p-5" style="
+			background: #5E719B;
+			border-radius: 5px;
+			color: #FFFFFF;">
 				<div class="row">
 					<div class="col-lg-2" >
-						<h2>Ages</h2>
+						<p><b>Ages</b></p>
 						<p>4 - 11 years old, mixed age classes</p>
 					</div>
 					<div class="col-lg-3" >
-						<h2>Price</h2>
+						<p><b>Price</b></p>
 						<p>USD $13/class (Total $109/course) All courses are non-refundable</p>
 					</div>
 					<div class="col-lg-7" >
-						<h2>Class Duration</h2>
+						<p><b>Class Duration</b></p>
 						<p>Once per week, for 8 weeks</p>
 						<p>See enrollment page for specific class dates offered. Miss a class? We’ll send you a private link to the class recording</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-3" >
-						<h2>Seats</h2>
+						<p><b>Seats</b></p>
 						<p>8 max. per class (space is limited!)</p>
 					</div>
 				</div>
@@ -75,7 +102,10 @@
 
 	<div class="row gx-4 gx-lg-5 align-items-center my-5">
 		<div class="col-lg-8 col-sm-offset-2" >
-			<div class="container" style="background: #5E719B; text-align: center;">
+			<div class="container white-out" style="text-align: center;
+			background: #5E719B;
+			border-radius: 5px;
+			color: #FFFFFF;">
 				<h1>Beginner</h1>
 				<p>Pre-requisites: None</p>
 			</div>
@@ -85,7 +115,10 @@
 
 	<div class="row gx-4 gx-lg-5 align-items-center my-5">
 		<div class="col-lg-8 col-sm-offset-2" >
-			<div class="container" style="background: #5E719B; text-align: center;">
+			<div class="container white-out" style="text-align: center;
+			background: #5E719B;
+			border-radius: 5px;
+			color: #FFFFFF;">
 				<h1>Conversational</h1>
 				<p>Pre-Requisites: Complete level 1-3 courses or <u>demonstrate</u> equivalent proficiency</p>
 			</div>

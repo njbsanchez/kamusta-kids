@@ -1,0 +1,31 @@
+[{
+  "1": {
+    "level_no": "1",
+    "level_name": "Greetings",
+    "description": "Learn basic Filipino greetings, polite words, and how to use them throughout the day. Your child will also say numbers, colors, and parts of the body in Filipino.",
+    "registration_link": "register.com",
+    "category": "beginner"
+  },
+
+  "2": {
+    "level_no": "2",
+    "level_name": "People",
+    "description": "Learn how to describe Filipino meals, family titles, and household items in Tagalog. We’ll also cover how to address the first, second, and third person.",
+    "registration_link": "register.com",
+    "category": "beginner"
+  },
+  "3": {
+    "level_no": "3",
+    "level_name": "Actions",
+    "description": "Discover traditional dances in the Philippines while describing actions in Tagalog. Your child will also study basic locations, animals, and emotions.",
+    "registration_link": "register.com",
+    "category": "beginner"
+  },
+  "4": {
+    "level_no": "4",
+    "level_name": "Questions",
+    "description": "Explore Filipino art forms while asking basic questions (i.e. Who, What, Where, When, Why) in Tagalog. We’ll also cover objects found at the playground, school, and mall.",
+    "registration_link": "register.com",
+    "category": "conversational"
+  }
+}]

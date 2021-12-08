@@ -177,7 +177,7 @@ class Category(db.Model):
     order_no = db.Column(db.Integer, unique=True)
     
     #--relationship--#
-    categories = db.relationship("Course", backref="category")
+    courses = db.relationship("Course", backref="category")
     
     def __repr__(self):
         return f'< Order = {self.order_no} User = {self.cat_name} >'
@@ -190,23 +190,26 @@ class Course(db.Model):
     
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     level_no = db.Column(db.String(3), unique=True, nullable=False)
-    level_name = db.Column(db.String(150), nullable=False)
+    level_name = db.Column(db.String(150), unique=True, nullable=False)
     description = db.Column(db.Text, unique=True, nullable=False)
-    registration_link = db.Column(db.String)
+    registration_link = db.Column(db.String, nullable=False)
     category_id = db.Column(db.Integer(), db.ForeignKey(Category.id))
+    image_url = db.Column(db.String, nullable=False)
 
-   
     def __repr__(self):
         return f'< Level = {self.level_name} Category = {self.category.cat_name} >'
 
-    def __init__(self, level_no, level_name, category_id, registration_link="N/A", description="N/A"):
-        self.level_no, self.level_name, self.category_id, self.registration_link, self.description = (level_no, level_name, category_id, registration_link, description)
+    def __init__(self, level_no, level_name, category, registration_link="N/A", description="N/A", image_url="https://i.ibb.co/K0Rm9fW/Screen-Shot-2021-12-07-at-2-03-56-PM.png"):
+        
+        category_instance = Category.query.filter(Category.cat_name == category).first()
+        self.level_no, self.level_name, self.category_id, self.registration_link, self.description, self.image_url= (level_no, level_name, category_instance.id, registration_link, description, self.image_url)
     
 if __name__ == '__main__':
     from app import app
     
     connect_to_db(app)
     Bootstrap(app)
+    
     db.create_all()
     db.session.commit()
             

@@ -145,43 +145,35 @@
 			</div>
 		</div>
 	</div>
-	{% for p in details %}
-	<tr>
-		<td>{{p.date}}</td>
-		<td>{{p.product.product_name}}</td>
-		<td>{{p.sku}}</td>
-		<td>{{p.type_key}}</td>
-		<td>{{p.entity.contact_name}}</td>
-		<td>{{p.initial_unit_count}}</td>
-		<td>{{p.cost_per_unit}}</td>
-		<td>
-			<a href="/vendor/{{ p.entity.id }}" class="btn btn-primary">Vendor Detail</a>
-			<a href="/intake/{{ p.entity.id }}" class="btn btn-success">Intake Detail</a>
-		</td>
-	</tr>
-	{%endfor%}
-	
-	<div class="row gx-4 gx-lg-5 align-items-center my-5">
-		<div class="col-lg-8 col-sm-offset-2">
-			<div
-				class="container white-out"
-				style="
-					text-align: center;
-					background: #675e9b;
-					border-radius: 5px;
-					color: #ffffff;
-				"
-			>
-				<div class="col-lg-6">
-					<div class="color m-5">
-					<img src="https://i.ibb.co/7SCzDN0/1-Jerry-Wang.png" alt="1-Jerry-Wang" style="width: 100%" border="10"/>
+
+	{% for d in details %}
+
+		<div class="row gx-4 gx-lg-5 align-items-center my-5">
+			<div class="col-lg-8 col-sm-offset-2">
+				<div
+					class="container white-out"
+					style="
+						background: #675e9b;
+						border-radius: 5px;
+						color: #ffffff;
+					"
+				>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="color m-5">
+							<img src="{{d.image_url}}" alt="random image for {{d.level_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+							</div>
+						</div>
+						<div class="col-lg-6 my-auto">
+							<p><b>{{d.level_name}}</b></p>
+							<p>{{d.description}}</p>
+							<button href="{{d.registration_link}}" class="yellowButton">Reserve a spot</button>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-6">
 				</div>
 			</div>
 		</div>
-	</div>
+	{%endfor%}	
 
 	<div class="row align-items-center my-5">
 		<div class="col-lg-8 col-sm-offset-2">

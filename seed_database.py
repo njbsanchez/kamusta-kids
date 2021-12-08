@@ -17,13 +17,15 @@ def get_categories():
 
     for cat_count, details in categories[0].items():
         cat_no, cat_name, pre_req = (
-            int(details["cat_no"]),
+            details["cat_no"],
             details["cat_name"],
             details["pre_req"]
         )
         # print(contact_name, company_name, entity_type, email, phone, notes)
         db_category = m.Category(
             cat_no, cat_name, pre_req)
+        print (db_category)
+        
         m.db.session.add(db_category)
 
         try:
@@ -41,20 +43,21 @@ def get_courses():
 
     # Create dummy users
     for course_count, details in courses[0].items():
-        course_no, course_name, description, registration_link, category, image_url = (
-            int(details["course_no"]),
+        course_no, course_name, description, registration_link, category_id, image_url = (
+            details["course_no"],
             details["course_name"],
             details["description"],
             details["registration_link"],
-            int(details["category"]),
+            details["category_id"],
             details["image_url"]
         )
 
         db_course = m.Course(
-            course_no, course_name, category, registration_link, description, image_url)
+            course_no, course_name, category_id, registration_link, description, image_url)
+        print (db_course)
         
         m.db.session.add(db_course)
-    
+        
         try:
             m.db.session.commit()
         except sq.IntegrityError:

@@ -162,12 +162,12 @@
 					>
 						<div class="row">
 							<div class="col-lg-6">
-								<div class="color m-5">
-								<img src="{{d.image_url}}" alt="random image for {{d.level_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+								<div style="padding:20px">
+								<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
 								</div>
 							</div>
-							<div class="col-lg-6 my-auto">
-								<p><b>{{d.level_name}}</b></p>
+							<div class="col-lg-6 my-auto" style="padding:50px">
+								<p><b>{{d.course_name}}</b></p>
 								<p>{{d.description}}</p>
 								<button href="{{d.registration_link}}" class="yellowButton">Reserve a spot</button>
 							</div>
@@ -178,6 +178,33 @@
 		{%endfor%}	
 	
 	{%endfor%}	
+
+	<div class="row gx-4 gx-lg-5 align-items-center my-5">
+		<div class="col-lg-8 col-sm-offset-2">
+			<div
+				class="container white-out"
+				style="
+					background: #675e9b;
+					border-radius: 5px;
+					color: #ffffff;
+				"
+			>
+				<div class="row">
+					<div class="col-lg-6 my-auto" style="padding:50px">
+						<p><b>Additional levels coming soon</b></p>
+						<p>Advance courses will be available as more kids enroll and grow in the program!</p>
+						<button href="#" class="blueButton" style="margin: 0px; width:100%">Notify me</button>
+					</div>
+					<div class="col-lg-6">
+						<div style="padding:20px">
+						<img src="https://i.ibb.co/K0Rm9fW/Screen-Shot-2021-12-07-at-2-03-56-PM.png" alt="random image" style="width: 100%; border-radius: 5px;" border="10"/>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 
 	{% endblock %}
 </body>

@@ -30,7 +30,7 @@ def go_courses():
 @app.route("/request-info")
 def request_info():
     """dummy development page"""
-    return render_template("coming_soon.html")
+    return render_template("request_info.html")
 
 @app.route("/go-enroll")
 def go_enroll():

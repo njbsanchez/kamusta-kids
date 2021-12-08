@@ -183,7 +183,7 @@ class Category(db.Model):
         return f'< Order = {self.cat_no} User = {self.cat_name} >'
 
     def __init__(self, cat_no, cat_name, pre_req="None"):
-        self.cat_name, self.cat_no, self.pre_req = (cat_name, cat_no, pre_req)
+        self.cat_name, self.cat_no, self.pre_req = (cat_name, int(cat_no), pre_req)
 
 class Course(db.Model):
     """An staff member."""
@@ -196,12 +196,13 @@ class Course(db.Model):
     category_id = db.Column(db.Integer(), db.ForeignKey(Category.id))
     image_url = db.Column(db.String, nullable=False)
 
+
     def __repr__(self):
-        return f'< Level = {self.course_name} Category = {self.category.cat_name} >'
+        return f'< Level = {self.course_name} >'
 
     def __init__(self, course_no, course_name, category_id, registration_link="N/A", description="N/A", image_url="https://i.ibb.co/K0Rm9fW/Screen-Shot-2021-12-07-at-2-03-56-PM.png"):
         
-        self.course_no, self.course_name, self.category_id, self.registration_link, self.description, self.image_url= (course_no, course_name, category_id, registration_link, description, self.image_url)
+        self.course_no, self.course_name, self.category_id, self.registration_link, self.description, self.image_url= (int(course_no), course_name, int(category_id), registration_link, description, image_url)
     
 if __name__ == '__main__':
     from app import app

@@ -1,5 +1,5 @@
 
-from internal.model import db, connect_to_db
+from model import db, connect_to_db
 from app import app
 # import internal.routes
 import external.routes

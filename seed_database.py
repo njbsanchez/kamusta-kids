@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 import sqlalchemy.exc as sq
 
-import internal.model as m
+import model as m
 import server
 
 
@@ -13,60 +13,53 @@ def get_categories():
 
     # Load dummy user data from JSON file
     with open("data/cat_catalog.json") as f:
-        dummy_entities = json.loads(f.read())
-    # print (dummy_entities)
-    # Create dummy users, store them in list so we can use them
-    dummies_in_db = []
-    for entity, details in dummy_entities[0].items():
-        contact_name, company_name, entity_role, entity_type, email, phone, notes = (
-            details["contact_name"],
-            details["company_name"],
-            details["entity_role"],
-            details["entity_type"],
-            details["email"],
-            details["phone"],
-            details["notes"]
+        categories = json.loads(f.read())
+
+    for cat_count, details in categories[0].items():
+        cat_no, cat_name, pre_req = (
+            int(details["cat_no"]),
+            details["cat_name"],
+            details["pre_req"]
         )
         # print(contact_name, company_name, entity_type, email, phone, notes)
-        db_entity = m.Entity(
-            contact_name, entity_role, company_name, entity_type, email, phone, notes
-        )
-        m.db.session.add(db_entity)
+        db_category = m.Category(
+            cat_no, cat_name, pre_req)
+        m.db.session.add(db_category)
 
         try:
             m.db.session.commit()
         except sq.IntegrityError:
             m.db.session.rollback()
-            print("entity already exists")
+            print("category already exists")
 
 def get_courses():
     """Load dummy users from dataset into database."""
 
-    # Load dummy class data from JSON file
-    with open("data/class_catalog.json") as f:
-        classes = json.loads(f.read())
+    # Load dummy course data from JSON file
+    with open("data/course_catalog.json") as f:
+        courses = json.loads(f.read())
 
     # Create dummy users
-    for class_count, details in classes[0].items():
-        level_no, level_name, description, registration_link, category, image_url = (
-            details["level_no"],
-            details["level_name"],
+    for course_count, details in courses[0].items():
+        course_no, course_name, description, registration_link, category, image_url = (
+            int(details["course_no"]),
+            details["course_name"],
             details["description"],
             details["registration_link"],
-            details["category"],
+            int(details["category"]),
             details["image_url"]
         )
 
-        db_class = m.Course(
-            level_no, level_name, category, registration_link, description, image_url)
+        db_course = m.Course(
+            course_no, course_name, category, registration_link, description, image_url)
         
-        m.db.session.add(db_class)
+        m.db.session.add(db_course)
     
         try:
             m.db.session.commit()
         except sq.IntegrityError:
             m.db.session.rollback()
-            print("class already exists")
+            print("course already exists")
 
 if __name__ == "__main__":
 
@@ -76,28 +69,16 @@ if __name__ == "__main__":
         "************************ CHECK IF DB CREATED ********************"
     )
 
-    get_entities()
+    get_categories()
 
     print(
-        "************************ DUMMY ENTITIES ADDED TO DB ********************"
+        "************************ CATEGORIES ADDED TO DB ********************"
     )
 
-    get_staff()
+    get_courses()
 
     print(
-        "************************ DUMMY STAFF ADDED TO DB ********************"
-    )
-
-    get_products()
-
-    print(
-        "************************ DUMMY PRODUCTS ADDED TO DB ********************"
-    )
-
-    get_intake()
-
-    print(
-        "************************ DUMMY INTAKES ADDED TO DB ********************"
+        "************************ COURSES ADDED TO DB ********************"
     )
 
     m.db.session.commit()

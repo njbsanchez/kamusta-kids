@@ -3,6 +3,7 @@ from app import app
 from flask_wtf import form
 import time
 import datetime
+from model import Category, Course
 
 @app.route("/")
 def go_homepage():
@@ -22,7 +23,9 @@ def go_learning():
 @app.route("/courses")
 def go_courses():
     """dummy development page"""
-    return render_template("courses.html")
+    cat_details = Category.query.order_by(Category.cat_no).all()
+    
+    return render_template("courses.html", cat_details=cat_details)
 
 @app.route("/request-info")
 def request_info():

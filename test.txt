@@ -1,0 +1,4 @@
+dropdb kamusta_psql
+createdb kamusta_psql
+python3 model.py
+python3 seed_database.py

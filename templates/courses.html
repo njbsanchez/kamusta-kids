@@ -129,71 +129,55 @@
 		</div>
 	</div>
 
-	<div class="row gx-4 gx-lg-5 align-items-center my-5">
-		<div class="col-lg-8 col-sm-offset-2">
-			<div
-				class="container white-out"
-				style="
-					text-align: center;
-					background: #5e719b;
-					border-radius: 5px;
-					color: #ffffff;
-				"
-			>
-				<h1>Beginner</h1>
-				<p>Pre-requisites: None</p>
-			</div>
-		</div>
-	</div>
-
-	{% for d in details %}
+	{% for cat in cat_details %}
 
 		<div class="row gx-4 gx-lg-5 align-items-center my-5">
 			<div class="col-lg-8 col-sm-offset-2">
 				<div
 					class="container white-out"
 					style="
-						background: #675e9b;
+						text-align: center;
+						background: #5e719b;
 						border-radius: 5px;
 						color: #ffffff;
 					"
 				>
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="color m-5">
-							<img src="{{d.image_url}}" alt="random image for {{d.level_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+					<h1>{{cat.cat_name}}</h1>
+					<p>Pre-requisites: {{cat.pre_req}}</p>
+				</div>
+			</div>
+		</div>
+
+		{% for d in cat.courses %}
+
+			<div class="row gx-4 gx-lg-5 align-items-center my-5">
+				<div class="col-lg-8 col-sm-offset-2">
+					<div
+						class="container white-out"
+						style="
+							background: #675e9b;
+							border-radius: 5px;
+							color: #ffffff;
+						"
+					>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="color m-5">
+								<img src="{{d.image_url}}" alt="random image for {{d.level_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-6 my-auto">
-							<p><b>{{d.level_name}}</b></p>
-							<p>{{d.description}}</p>
-							<button href="{{d.registration_link}}" class="yellowButton">Reserve a spot</button>
+							<div class="col-lg-6 my-auto">
+								<p><b>{{d.level_name}}</b></p>
+								<p>{{d.description}}</p>
+								<button href="{{d.registration_link}}" class="yellowButton">Reserve a spot</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		{%endfor%}	
+	
 	{%endfor%}	
-
-	<div class="row align-items-center my-5">
-		<div class="col-lg-8 col-sm-offset-2">
-			<div
-				class="container white-out"
-				style="
-					text-align: center;
-					background: #5e719b;
-					border-radius: 5px;
-					color: #ffffff;
-				"
-			>
-				<h1>Conversational</h1>
-				<p>
-					Pre-Requisites: Complete level 1-3 courses or
-					<u>demonstrate</u> equivalent proficiency
-				</p>
-			</div>
-		</div>
-	</div>
 
 	{% endblock %}
 </body>

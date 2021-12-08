@@ -1,0 +1,13 @@
+[{
+  "1": {
+    "cat_no": "1",
+    "cat_name": "Beginner",
+    "pre_req": "None"
+    },
+
+  "2": {
+    "cat_no": "2",
+    "cat_name": "Conversational",
+    "pre_req": "Pre-Requisites: Complete level 1-3 courses or <b>ldemonstrate</b> equivalent proficiency"
+    }
+}]

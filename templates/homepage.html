@@ -68,14 +68,34 @@
 		<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
 			<div class="col-lg-10 col-sm-offset-1" style="text-align: right;">
 				<h1>Start Speaking the Language</h1>
-				<div class="row gx-4 gx-lg-5 align-items-center my-5" style="background: #5E719B">
-					<div class="col-lg-6 "><img style="width: 80%" style=" padding-top: 50px;padding-bottom: 50px;" src="https://i.ibb.co/ZJ7QWmg/1-Tusik-Only.png" alt="1-Tusik-Only" border="0"></div>
-					<div class="col-lg-4 col-sm-offset-1" >
-						<h1>Explore the rich Filipino heritage</h1>
-						<p>Learn the Filipino language and ethnic customs through fun challenges and engaging small group lessons. Kamusta Kids offers virtual classes for children ages 4-11.</p>
-						<button href="#" class="yellowButton">Enroll Today</button>
+				{% for d in course %}
+
+					<div class="row gx-4 gx-lg-5 mx-auto my-5">
+						<div class="col-lg-8 mx-auto">
+							<div
+								class="container white-out"
+								style="
+									background: #675e9b;
+									border-radius: 5px;
+									color: #ffffff;
+								"
+							>
+								<div class="row">
+									<div class="col-lg-6">
+										<div style="padding:20px">
+										<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+										</div>
+									</div>
+									<div class="col-lg-6 my-auto" style="padding:50px">
+										<p><b>{{d.course_name}}</b></p>
+										<p>{{d.description}}</p>
+										<button href="{{d.registration_link}}" class="yellowButton">Reserve a spot</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
+				{%endfor%}	
 			</div>
 		</div>
 		<div class="row row-section gx-4 gx-lg-5 align-items-center my-5 p-10" style="padding-top:25px; padding-bottom:25px;">

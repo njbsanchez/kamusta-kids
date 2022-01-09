@@ -47,39 +47,21 @@
 
 <body>
 	{% block body%}
-	<div
-		class="row align-items-center""
-		style="background-color: #5e719b; padding-top: 0px; padding-bottom: 0px"
-	>
-		<div class="col-lg-6">
-			<img
-				src="https://i.ibb.co/7SCzDN0/1-Jerry-Wang.png"
-				alt="1-Jerry-Wang"
-				style="width: 100%"
-				border="10"
-			/>
-		</div>
-		<div
-			class="col-lg-6"
-			style="background-color: #5e719b; padding-top: 0px; padding-bottom: 0px"
-		>
-			<div
-				class="container-fluid p-5"
-				style="background-color: #5e719b; padding-top: 0px; padding-bottom: 0px"
-			>
-				<h1 class="white-out">Courses</h1>
-				<p class="white-out">
-					Our virtual Tagalog lessons cover practical themes to reinforce
-					speaking at home. As well as, ethnic customs to explore Filipino
-					roots.
-				</p>
-				<button href="#" class="blueButton">Ask a Question</button>
-			</div>
-		</div>
+	<div class="row align-items-center" style="background: #5E719B">
+		<div class="col-lg-6"><img src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png" alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2" border="0"></div>
+		<div class="col-lg-4 col-sm-offset-1" >
+			<h1 class="white-out">Courses</h1>
+			<p class="white-out">
+				Our virtual Tagalog lessons cover practical themes to reinforce
+				speaking at home. As well as, ethnic customs to explore Filipino
+				roots.
+			</p>
+			<a href="/request-info"><button class="blueButton-lg">Ask a Question</button></a>		
+		</div>	
 	</div>
 
-	<div class="row  my-5">
-		<div class="col-lg-8 mx-auto">
+	<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+		<div class="col-lg-10 col-sm-offset-1">
 			<div
 				class="container white-out"
 				style="
@@ -87,14 +69,13 @@
 					background: #5e719b;
 					border-radius: 5px;
 					color: #ffffff;
-				"
-			>
+				">
 				<h1>All Courses</h1>
 			</div>
 		</div>
 	</div>
-	<div class="row mx-auto">
-		<div class="col-lg-8 mx-auto">
+	<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+		<div class="col-lg-10 col-sm-offset-1">
 			<div
 				class="container p-5"
 				style="background: #5e719b; border-radius: 5px; color: #ffffff"
@@ -131,8 +112,8 @@
 
 	{% for cat in cat_details %}
 
-		<div class="row gx-4 gx-lg-5 mx-auto my-5">
-			<div class="col-lg-8 mx-auto">
+		<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+			<div class="col-lg-10 col-sm-offset-1">
 				<div
 					class="container white-out"
 					style="
@@ -150,8 +131,8 @@
 
 		{% for d in cat.courses %}
 
-			<div class="row gx-4 gx-lg-5 mx-auto my-5">
-				<div class="col-lg-8 mx-auto">
+			<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+				<div class="col-lg-10 col-sm-offset-1">
 					<div
 						class="container white-out"
 						style="
@@ -169,7 +150,7 @@
 							<div class="col-lg-6 my-auto" style="padding:50px">
 								<p><b>{{d.course_name}}</b></p>
 								<p>{{d.description}}</p>
-								<button href="{{d.registration_link}}" class="yellowButton">Reserve a spot</button>
+								<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
 							</div>
 						</div>
 					</div>
@@ -179,8 +160,8 @@
 	
 	{%endfor%}	
 
-	<div class="row gx-4 gx-lg-5 mx-auto my-5">
-		<div class="col-lg-8 mx-auto">
+	<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+		<div class="col-lg-10 col-sm-offset-1">
 			<div
 				class="container white-out"
 				style="
@@ -193,11 +174,11 @@
 					<div class="col-lg-6 my-auto" style="padding:50px">
 						<p><b>Additional levels coming soon</b></p>
 						<p>Advance courses will be available as more kids enroll and grow in the program!</p>
-						<button href="#" class="blueButton" style="margin: 0px; width:100%">Notify me</button>
+						<a target="_blank" href= "https://docs.google.com/forms/d/e/1FAIpQLSci_G1TxJ17fmuQtDMvaw17c4SrTznxi41OJwVdf9E2MWvT-A/viewform"><button class="blueButton-lg" style="margin: 0px; width:100%">Notify me</button></a>
 					</div>
 					<div class="col-lg-6">
 						<div style="padding:20px">
-						<img src="https://i.ibb.co/K0Rm9fW/Screen-Shot-2021-12-07-at-2-03-56-PM.png" alt="random image" style="width: 100%; border-radius: 5px;" border="10"/>
+						<img src="https://i.ibb.co/CsQ4bZS/austin-nicomedez-0k-UCCQm1-VE4-unsplash-1.png" alt="random image" style="width: 100%; border-radius: 5px;" border="10"/>
 						</div>
 					</div>
 					

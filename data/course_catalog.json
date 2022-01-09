@@ -3,7 +3,7 @@
     "course_no": "1",
     "course_name": "Greetings",
     "description": "Learn basic Filipino greetings, polite words, and how to use them throughout the day. Your child will also say numbers, colors, and parts of the body in Filipino.",
-    "registration_link": "register.com",
+    "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSe5bDClDFQ3bWBZl4TLNjHcvZh826tGvTOYOmoX113lA7LNpA/viewform",
     "category_id": "1",
     "image_url": "https://i.ibb.co/CsQ4bZS/austin-nicomedez-0k-UCCQm1-VE4-unsplash-1.png"
   },
@@ -12,25 +12,25 @@
     "course_no": "2",
     "course_name": "People",
     "description": "Learn how to describe Filipino meals, family titles, and household items in Tagalog. We’ll also cover how to address the first, second, and third person.",
-    "registration_link": "register.com",
+    "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSe5bDClDFQ3bWBZl4TLNjHcvZh826tGvTOYOmoX113lA7LNpA/viewform",
     "category_id": "1",
-    "image_url": "https://i.ibb.co/q5kGG5T/hisu-lee-in9-Qlsp-OG6w-unsplash-1.png"
+    "image_url": "https://i.ibb.co/CsQ4bZS/austin-nicomedez-0k-UCCQm1-VE4-unsplash-1.png"
   },
   "3": {
     "course_no": "3",
     "course_name": "Actions",
     "description": "Discover traditional dances in the Philippines while describing actions in Tagalog. Your child will also study basic locations, animals, and emotions.",
-    "registration_link": "register.com",
+    "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSe5bDClDFQ3bWBZl4TLNjHcvZh826tGvTOYOmoX113lA7LNpA/viewform",
     "category_id": "1",
-    "image_url": "https://i.ibb.co/kKNVTGP/mi-pham-0-DPyb8t-Kf-I-unsplash-1.png"
+    "image_url": "https://i.ibb.co/CsQ4bZS/austin-nicomedez-0k-UCCQm1-VE4-unsplash-1.png"
   },
   "4": {
     "course_no": "4",
     "course_name": "Questions",
     "description": "Explore Filipino art forms while asking basic questions (i.e. Who, What, Where, When, Why) in Tagalog. We’ll also cover objects found at the playground, school, and mall.",
-    "registration_link": "register.com",
+    "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSe5bDClDFQ3bWBZl4TLNjHcvZh826tGvTOYOmoX113lA7LNpA/viewform",
     "category_id": "2",
-    "image_url": "https://i.ibb.co/K0Rm9fW/Screen-Shot-2021-12-07-at-2-03-56-PM.png"
+    "image_url": "https://i.ibb.co/CsQ4bZS/austin-nicomedez-0k-UCCQm1-VE4-unsplash-1.png"
     
   }
 }]

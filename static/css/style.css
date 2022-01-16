@@ -31,8 +31,18 @@ h1 {
     line-height: 24px;
     text-align: center;
 }
+
+.img-logo {
+    width: 60%;
+}
+
 .logo-text {
     font-size: 14px;
+    text-align: center;
+}
+
+.nav-item {
+    font-weight: bold;
 }
 .mr-auto {
     

@@ -1,28 +1,23 @@
-body {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 36px;
-    background-image: url("https://i.ibb.co/S60Kg7y/Untitled-design-4.png");
-    background-repeat: repeat-y;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+/* navigation bar */
 
+.navbar {
+    background: #FDFDFD;
+    padding-top: 10px;  
 }
-h1 {
-    font-family: Suez One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 47px;
+
+.logo-box {
+    margin-top: 5px
 }
-.white-out {
-    color: #FFFFFF;
+
+.logo-box img-logo {
+    width: 60%;
 }
+
+.logo-box logo-text {
+    font-size: 14px;
+    text-align: center;
+}
+
 .nav-text {
     font-family: Poppins;
     font-style: normal;
@@ -32,24 +27,93 @@ h1 {
     text-align: center;
 }
 
-.img-logo {
-    width: 60%;
-}
-
-.logo-text {
-    font-size: 14px;
-    text-align: center;
-}
-
-.nav-item {
+.nav-text nav-item {
     font-weight: bold;
 }
+
+
+/* text */
+
+h1 {
+    font-family: Suez One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+h2 {
+    font-family: Suez One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+
+    color: #000000;   
+}
+
+h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #000000;
+
+}
+
+p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+
+}
+
+label {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+body {
+    background-image: url("https://i.ibb.co/S60Kg7y/Untitled-design-4.png");
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+.white-out {
+    color: #FFFFFF;
+}
+
+
+
 .mr-auto {
     
     margin: auto !important;
     display: flex;
     justify-content: space-between;
 }
+
+/* buttons */
+
 .yellowButton-sm {
     background-color: #f5d015;
     border: none;
@@ -64,6 +128,7 @@ h1 {
     box-shadow: 0px 5px 0px #E2AB19;
     color: black;
 }
+
 .yellowButton-md {
     width: 40%;
     height: 45px;
@@ -136,15 +201,6 @@ h1 {
 }
 
 
-
-#centeredmenu button {
-    margin:0;
-    padding:0;
-    list-style:none;
-    float:right;
-    position:relative;
-    right:50%;
-  
 .white-out {
     color: #ffffff;
 }

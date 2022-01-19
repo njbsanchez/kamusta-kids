@@ -48,9 +48,105 @@
 	</head>
 
 	<body>
+		<nav class="menu-cond navbar navbar-fixed navbar-expand-sm navbar-light bg-light navbar-fixed">
+			<div class="small-nav">
+				<a class="navbar-brand" href="/">
+					<div class="logo-box col-6 offset-1">
+						<div class="row justify-content-center">
+							<img
+								class="img-logo"
+								src="https://i.ibb.co/DQLNtY6/Logo-Title.png"
+								alt="Logo-Title"
+							/>
+						</div>
+						<div class="row">
+							<span class="logo-text text-center"
+								>Filipino Language E-Classes</span
+							>
+						</div>
+					</div>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+							MJ Inventory Tool
+						</h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="/">Home</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Add New Record
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+									<li>
+										<a class="dropdown-item" href="/intake" id="intakeModal">Intake</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="/sale" id="saleModal">Sale</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="/payment" id="sampleModal">Payment</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="/sample" id="sampleModal">Sample</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#"> See All Records (coming soon)</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/inventory">Inventory</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/sale_all">Sales</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/sample">Samples</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									External Partners
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+									<li><a class="dropdown-item" href="/customer">Customers</a></li>
+									<li><a class="dropdown-item" href="/vendor">Vendors</a></li>
+								</ul>
+							</li>
+							<hr class="dropdown-divider">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Reporting</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Administrative Activity
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+									<li>
+										<a class="dropdown-item" href="/staff/">Staff and Brokers</a>
+									</li>
+									<li>
+										<a href="/development"> Feature Requests</a>
+									</li>
+									
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
 		<nav
-			class="navbar navbar-expand navbar-light bg-light mr-auto nav-justified"
-		>
+			class="menu-full navbar navbar-fixed navbar-expand navbar-light bg-light navbar-fixed">
 			<div class="container-fluid nav-justified">
 				<div
 					class="col-lg-3 logo-box"
@@ -103,6 +199,7 @@
 				</ul>
 			</div>
 		</nav>
+		
 
 		<header class="text-dark container-fluid">
 			{% with messages = get_flashed_messages() %} {% if messages %}

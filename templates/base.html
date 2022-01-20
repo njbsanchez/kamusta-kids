@@ -35,7 +35,7 @@
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
 		/>
 		<link rel="stylesheet" href="/static/css/style.css" />
-
+		
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -48,21 +48,15 @@
 	</head>
 
 	<body>
-		<nav class="menu-cond navbar navbar-fixed navbar-expand-sm navbar-light bg-light navbar-fixed">
-			<div class="small-nav">
-				<a class="navbar-brand" href="/">
+		<nav class="menu-cond navbar navbar-expand-sm navbar-light bg-light">
+			<div class="small-nav col-12">
+				<a class="navbar-brand col-8 offset-1 p-1" href="/">
 					<div class="logo-box col-6 offset-1">
-						<div class="row justify-content-center">
-							<img
-								class="img-logo"
-								src="https://i.ibb.co/DQLNtY6/Logo-Title.png"
-								alt="Logo-Title"
-							/>
+						<div class="row">
+							<img class="img-logo" src="https://i.ibb.co/DQLNtY6/Logo-Title.png" alt="Logo-Title">
 						</div>
 						<div class="row">
-							<span class="logo-text text-center"
-								>Filipino Language E-Classes</span
-							>
+							<span class="logo-text text-center">Filipino Language E-Classes</span>
 						</div>
 					</div>
 				</a>
@@ -211,7 +205,7 @@
 			{% endif %} {% endwith %}
 		</header>
 
-		<div class="wrapper">{% block body %} {% endblock %}</div>
+		{% block body %} {% endblock %}
 
 		<footer>
 			{% block after_body%} {% include 'footer.html' %} {% endblock %}

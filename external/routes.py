@@ -16,6 +16,11 @@ def go_about():
     """dummy development page"""
     return render_template("aboutus.html")
 
+@app.route("/base", methods=['GET'])
+def go_base():
+    """dummy development page"""
+    return render_template("base.html")
+
 @app.route("/how-learning-works", methods=['GET'])
 def go_learning():
     """dummy development page"""

@@ -46,7 +46,8 @@
             display: none;
         }
     .img-logo {
-        width:200px;
+        width: 163px;
+        margin-right: 100px;
     }
     .logo-box {
         margin-top: 0px;
@@ -56,21 +57,24 @@
         font-size: 24px;
 		line-height: normal;
     } 
-
-    .navbar-brand {
-        height: 0px;
-        padding: 0px 0px;
-
-    }
-
     .navbar-light .navbar-toggler {
         color: rgba(0,0,0,.55);
         border-color: rgba(0,0,0,0);
     }
     .navbar {
         margin-bottom: 0px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    .navcontainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brand {
+        size: 100px;
     }
     .wrapper {
         text-align:center;

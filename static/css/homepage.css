@@ -1,0 +1,22 @@
+.parent-reviews {
+    margin: 20px;
+    padding: 60px;
+    background-image:url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+.right-side {
+    text-align: right;
+}
+
+@media only screen and (max-width: 574px) {
+	.menu-full {
+		display: none;
+	}
+
+    .headtext.col-lg-6 {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+}

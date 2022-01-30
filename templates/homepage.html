@@ -17,23 +17,23 @@
 			<div class="col-lg-6"><img style="width: 100%" src="https://i.ibb.co/ZJ7QWmg/1-Tusik-Only.png" alt="1-Tusik-Only" border="0"></div>
 			<div class="headtext col-lg-6" >
 				<div class="container-fluid">
-					<h1 class="white-out">Explore the <br class="d-md-none" /> rich Filipino heritage</h1>
+					<h1 class="white-out" style="text-align:center;">Explore the <br class="d-md-none" /> rich Filipino heritage</h1>
 					<p class="white-out">Learn the Filipino language and ethnic customs through fun challenges and engaging small group lessons. Kamusta Kids offers virtual classes for children ages 4-11.</p>
 
 					<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe5bDClDFQ3bWBZl4TLNjHcvZh826tGvTOYOmoX113lA7LNpA/viewform"><button class="yellowButton-md">Enroll Today</button></a>
 				</div>
 			</div>
 		</div>
-		<div class="row align-items-center" style="padding-top:25px; padding-bottom:25px;">
-			<div class="col-lg-7 col-sm-offset-1" >
-				<h1>Why Tagalog?</h1>
+		<div class="row lean-left">
+			<div class="col-md-8 col-md-offset-1" >
+				<h1 class="">Why Tagalog?</h1>
 				<p>Research shows that speaking another language boosts memory, critical thinking, and problem solving skills. Multilingual children also show signs of enhanced creativity and mental flexibility.</p>
 				<p>It only takes 1-2 generations to lose our ethnic language. Unless we proactively teach our children the language of their ancestors they are bound to never learn it. </p>
 				<a href="/courses"><button class="yellowButton-md">See Tagalog lessons</button></a>
 			</div>
 		</div>
-		<div class="row gx-4 gx-lg-5 align-items-center"style="padding-top:25px; padding-bottom:25px;">
-			<div class="col-lg-7 col-sm-offset-4" style="text-align: right;">
+		<div class="row lean-right">
+			<div class="col-lg-7 col-sm-offset-4">
 				<h1>Why Kamusta Kids?</h1>
 				<p>We know the importance that language plays in preserving Filipino heritage. Our online classes will help your child learn Tagalog in a playfully interactive, small group setting. They will also learn how to speak with a cultural context, as we uncover traditional Filipino customs.</p>
 				<a href="/about"><button class="yellowButton-md">Get to know us</button></a>
@@ -41,10 +41,10 @@
 		</div>
 		<div class="row gx-4 gx-lg-5 align-items-center justify-content-center" style="text-align:center; padding-top:25px; padding-bottom:25px;">
 			<div class="col-sm-9" style="font-size:16px; margin: 20px; padding-top: 60px; padding-bottom:60px; background-image:url('https://i.ibb.co/mHW4wyK/yellow-blob.png');  background-position: center; background-size:contain; background-repeat:no-repeat;text-align:center; vertical-align:center;">
-			<img src="https://i.ibb.co/Sm8Hskh/Screen-Shot-2021-09-01-at-7-56-1.png" alt="Screen-Shot-2021-09-01-at-7-56-1" border="0" style="width:30%; text-align:center;"></a>
+			<img class="screenshot" src="https://i.ibb.co/Sm8Hskh/Screen-Shot-2021-09-01-at-7-56-1.png" alt="Screen-Shot-2021-09-01-at-7-56-1" border="0" style="width:80%; text-align:center;"></a>
 			</div>
 		</div>
-		<div class="row  gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+		<div class="row lean-left">
 			<div class="col-lg-7 col-sm-offset-1" >
 				<h1>How Learning Works</h1>
 				<ol>
@@ -55,36 +55,33 @@
 				<a href="/how-learning-works"><button id="centeredmenu" class="yellowButton-md">See teaching process</button></a>
 			</div>
 		</div>
-		<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
-			<div class="col-lg-10 col-sm-offset-1" style="text-align: right;">
+		<div class="row lean-right">
+			<div class="col-lg-10 col-sm-offset-1">
 				<h1>Start Speaking the Language</h1>
-					<div class="row gx-4 gx-lg-5 mx-auto">
-						<div class="col-lg-8">
-							<div
-								class="container white-out"
-								style="
-									background: #675e9b;
-									border-radius: 5px;
-									color: #ffffff;
-								"
-							>
-								<div class="row">
-									<div class="col-lg-6">
-										<div style="padding:20px">
-										<img src="{{course_detail.image_url}}" alt="random image for {{course_detail.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
-										</div>
-									</div>
-									<div class="col-lg-6 my-auto" style="padding:50px">
-										<p><b>{{course_detail.course_name}}</b></p>
-										<p>{{course_detail.description}}</p>
-										<a target="_blank" href="{{course_detail.registration_link}}"><button class="yellowButton-md">Reserve a spot</button></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 			</div>
 		</div>
+
+		<div class="course-section row lean-left">
+			<div class="col-lg-10 col-sm-offset-1">
+				<div
+					class="course-box container white-out"
+				>
+					<div class="row">
+						<div class="col-lg-6">
+							<div style="padding:20px">
+							<img src="{{course_detail.image_url}}" alt="random image for {{course_detail.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+							</div>
+						</div>
+						<div class="col-lg-6 course-text">
+							<p><b>{{course_detail.course_name}}</b></p>
+							<p>{{course_detail.description}}</p>
+							<a target="_blank" href="{{course_detail.registration_link}}"><button class="yellowButton-md">Reserve a spot</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				
 		<div class="row row-section gx-4 gx-lg-5 align-items-center my-5 p-10" style="padding-top:25px; padding-bottom:25px;">
 			<div class="col-lg-10 flexbox col-sm-offset-1" >
 				<h1>Parent Reviews</h1>

@@ -6,17 +6,17 @@
     background-repeat:no-repeat;
 }
 
-.right-side {
-    text-align: right;
-}
+
 
 @media only screen and (max-width: 574px) {
 	.menu-full {
 		display: none;
 	}
-
     .headtext.col-lg-6 {
         margin-top: 15px;
         margin-bottom: 35px;
+    }
+    .col-lg-6.course-text {
+        padding: 0px;
     }
 }

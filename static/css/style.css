@@ -35,8 +35,16 @@
     padding: 0px 0px;
 }
 
-div .headhead .row {
+.headhead{
     background: #5E719B;
+}
+
+.lean-right {
+    text-align:right;
+}
+
+.lean-left {
+    text-align:left;
 }
 
 /* large view */
@@ -54,9 +62,10 @@ h1 {
 	font-weight: normal;
 	font-size: 36px;
 	line-height: 47px;
-	align-items: center;
 
 	color: #000000;
+
+    padding-top:25px;
 }
 
 h2 {
@@ -79,13 +88,12 @@ h3 {
 	color: #000000;
 }
 
-p {
+p, ol {
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 36px;
-    text-align: left;
 
 	color: #000000;
 }
@@ -135,6 +143,8 @@ bod-extra {
 	border-radius: 70px;
 	box-shadow: 0px 5px 0px #e2ab19;
 	color: black;
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 .yellowButton-md {
@@ -159,6 +169,8 @@ bod-extra {
 	border-radius: 70px;
 	box-shadow: 0px 5px 0px #e2ab19;
 	color: black;
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 .yellowButton-lg {
@@ -183,6 +195,8 @@ bod-extra {
 	border-radius: 70px;
 	box-shadow: 0px 5px 0px #e2ab19;
 	color: black;
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 .blueButton-lg {
@@ -206,6 +220,8 @@ bod-extra {
 	border-radius: 5px;
 	box-shadow: 0px 5px 0px #2c659f;
 	color: black;
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 .white-out {
@@ -233,6 +249,16 @@ footer {
 	background: #5e719b;
 	border-radius: 5px;
 	color: #ffffff;
+}
+
+.course-box {
+    background: #675e9b;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.course-text {
+    padding: 50px;
 }
 
 /* .navbar-toggle .icon-bar{
@@ -317,7 +343,7 @@ footer {
         color: #ffffff;
     }
 	.wrapper {
-		text-align: center;
+		text-align: right;
 	}
 
     /* text */
@@ -325,16 +351,18 @@ footer {
 
         font-size: 25px;
         line-height: 33px;
-        align-items: center;
+
     }
 
     /* buttons */
 
     .yellowButton-sm, .yellowButton-md, .yellowButton-lg  {
         width: 95%;
+    
     }
     .blueButton-md, .blueButton-lg  {
         width: 95%;
+        
     }
     
 }

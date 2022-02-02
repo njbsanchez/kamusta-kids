@@ -71,7 +71,7 @@
 				</div>
 			</div>
 
-			<div class="course-section row lean-left">
+			<div class="course-large row lean-left">
 				<div class="col-lg-10 col-sm-offset-1">
 					<div
 						class="course-box container white-out"
@@ -92,8 +92,19 @@
 				</div>
 			</div>
 
+			<div class="course-small row lean-left">
+				<div class="col-lg-6 course-img">
+						<img src="{{course_detail.image_url}}" alt="random image for {{course_detail.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+				</div>
+				<div class="col-lg-6 course-text">
+					<h3><b>Level {{course_detail.category_id}}: {{course_detail.course_name}}</b></h3>
+					<p>{{course_detail.description}}</p>
+					<a target="_blank" href="{{course_detail.registration_link}}"><button class="yellowButton-md">Reserve a spot</button></a>
+				</div>
+			</div>
 
 		</div>
 		{% endblock %}
 	</body>
+	<link rel="stylesheet" href="/static/css/homepage.css" />
 </html>

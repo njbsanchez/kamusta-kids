@@ -67,6 +67,8 @@ h1 {
 
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h2 {
@@ -77,6 +79,9 @@ h2 {
 	line-height: 37px;
 
 	color: #000000;
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h3 {
@@ -87,6 +92,9 @@ h3 {
 	line-height: 27px;
 
 	color: #000000;
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 p, ol {
@@ -97,6 +105,14 @@ p, ol {
 	line-height: 36px;
 
 	color: #000000;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ol {
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
 label {
@@ -259,7 +275,11 @@ footer {
 }
 
 .course-text {
-    padding: 50px;
+    padding: 15px;
+}
+
+.course-img {
+    padding: 15px;
 }
 
 /* .navbar-toggle .icon-bar{

@@ -19,4 +19,7 @@
     .col-lg-6.course-text {
         padding: 0px;
     }
+    .screenshot {
+        width: 80%;
+    }
 }

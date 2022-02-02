@@ -5,6 +5,7 @@
 	<head> 
 		
 		<style>
+
 		</style>
 		<link rel="stylesheet" href="/static/css/homepage.css" />
 		
@@ -12,113 +13,87 @@
 
 	<body>
 		{% block body%}
-	<div class="wrapper">
-		<div class="headhead row">
-			<div class="col-lg-6"><img style="width: 100%" src="https://i.ibb.co/ZJ7QWmg/1-Tusik-Only.png" alt="1-Tusik-Only" border="0"></div>
-			<div class="headtext col-lg-6" >
-				<div class="container-fluid">
-					<h1 class="white-out" style="text-align:center;">Explore the <br class="d-md-none" /> rich Filipino heritage</h1>
-					<p class="white-out">Learn the Filipino language and ethnic customs through fun challenges and engaging small group lessons. Kamusta Kids offers virtual classes for children ages 4-11.</p>
+		<div class="wrapper container">
+			
+			<div class="headhead row">
+				<div class="col-lg-6">
+					<img style="width: 100%" src="https://i.ibb.co/ZJ7QWmg/1-Tusik-Only.png" alt="1-Tusik-Only" border="0">
+				</div>
 
-					<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe5bDClDFQ3bWBZl4TLNjHcvZh826tGvTOYOmoX113lA7LNpA/viewform"><button class="yellowButton-md">Enroll Today</button></a>
+				<div class="headtext col-lg-6" >
+					<div class="container-fluid">
+						<h1 class="white-out" style="text-align:center;">Explore the <br class="d-md-none" /> rich Filipino heritage</h1>
+						<p class="white-out lean-left">Learn the Filipino language and ethnic customs through fun challenges and engaging small group lessons. Kamusta Kids offers virtual classes for children ages 4-11.</p>
+		
+						<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe5bDClDFQ3bWBZl4TLNjHcvZh826tGvTOYOmoX113lA7LNpA/viewform"><button class="yellowButton-md">Enroll Today</button></a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row lean-left">
-			<div class="col-md-8 col-md-offset-1" >
-				<h1 class="">Why Tagalog?</h1>
-				<p>Research shows that speaking another language boosts memory, critical thinking, and problem solving skills. Multilingual children also show signs of enhanced creativity and mental flexibility.</p>
-				<p>It only takes 1-2 generations to lose our ethnic language. Unless we proactively teach our children the language of their ancestors they are bound to never learn it. </p>
-				<a href="/courses"><button class="yellowButton-md">See Tagalog lessons</button></a>
-			</div>
-		</div>
-		<div class="row lean-right">
-			<div class="col-lg-7 col-sm-offset-4">
-				<h1>Why Kamusta Kids?</h1>
-				<p>We know the importance that language plays in preserving Filipino heritage. Our online classes will help your child learn Tagalog in a playfully interactive, small group setting. They will also learn how to speak with a cultural context, as we uncover traditional Filipino customs.</p>
-				<a href="/about"><button class="yellowButton-md">Get to know us</button></a>
-			</div>
-		</div>
-		<div class="row gx-4 gx-lg-5 align-items-center justify-content-center" style="text-align:center; padding-top:25px; padding-bottom:25px;">
-			<div class="col-sm-9" style="font-size:16px; margin: 20px; padding-top: 60px; padding-bottom:60px; background-image:url('https://i.ibb.co/mHW4wyK/yellow-blob.png');  background-position: center; background-size:contain; background-repeat:no-repeat;text-align:center; vertical-align:center;">
-			<img class="screenshot" src="https://i.ibb.co/Sm8Hskh/Screen-Shot-2021-09-01-at-7-56-1.png" alt="Screen-Shot-2021-09-01-at-7-56-1" border="0" style="width:80%; text-align:center;"></a>
-			</div>
-		</div>
-		<div class="row lean-left">
-			<div class="col-lg-7 col-sm-offset-1" >
-				<h1>How Learning Works</h1>
-				<ol>
-					<li>Children meet their cohort and teacher on Zoom for class once a week</li>
-					<li>Children will learn Tagalog through cultural lessons, fun challenges, and team building.They’ll also practice speaking to their family in Tagalog for homework during the week.</li>
-					<li>After 8 classes, your child may advance to the next level!</li>
-				</ol>
-				<a href="/how-learning-works"><button id="centeredmenu" class="yellowButton-md">See teaching process</button></a>
-			</div>
-		</div>
-		<div class="row lean-right">
-			<div class="col-lg-10 col-sm-offset-1">
-				<h1>Start Speaking the Language</h1>
-			</div>
-		</div>
 
-		<div class="course-section row lean-left">
-			<div class="col-lg-10 col-sm-offset-1">
-				<div
-					class="course-box container white-out"
-				>
-					<div class="row">
-						<div class="col-lg-6">
-							<div style="padding:20px">
-							<img src="{{course_detail.image_url}}" alt="random image for {{course_detail.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+			<div class="row lean-left">
+				<div class="col-md-8 col-md-offset-1" >
+					<h1 class="">Why Tagalog?</h1>
+					<p>Research shows that speaking another language boosts memory, critical thinking, and problem solving skills. Multilingual children also show signs of enhanced creativity and mental flexibility.</p>
+					<p>It only takes 1-2 generations to lose our ethnic language. Unless we proactively teach our children the language of their ancestors they are bound to never learn it. </p>
+					<a href="/courses"><button class="yellowButton-md">See Tagalog lessons</button></a>
+				</div>
+			</div>
+
+			<div class="row lean-right">
+				<div class="col-lg-7 col-sm-offset-4">
+					<h1>Why Kamusta Kids?</h1>
+					<p>We know the importance that language plays in preserving Filipino heritage. Our online classes will help your child learn Tagalog in a playfully interactive, small group setting. They will also learn how to speak with a cultural context, as we uncover traditional Filipino customs.</p>
+					<a href="/about"><button class="yellowButton-md">Get to know us</button></a>
+				</div>
+			</div>
+
+			<div class="row margin-auto">
+				<div class="col-sm-9" style="">
+					<img src="https://i.ibb.co/Ks7BhW1/screenshot.png" alt="screenshot" border="0" style="width:100%;">
+				</div>
+			</div>
+
+			<div class="row lean-left">
+				<div class="col-lg-7 col-sm-offset-1" >
+					<h1>How Learning Works</h1>
+					<ol>
+						<li>Children meet their cohort and teacher on Zoom for class once a week</li>
+						<li>Children will learn Tagalog through cultural lessons, fun challenges, and team building.They’ll also practice speaking to their family in Tagalog for homework during the week.</li>
+						<li>After 8 classes, your child may advance to the next level!</li>
+					</ol>
+					<a href="/how-learning-works"><button id="centeredmenu" class="yellowButton-md">See teaching process</button></a>
+				</div>
+			</div>
+
+			<div class="row lean-right">
+				<div class="col-lg-10 col-sm-offset-1">
+					<h1>Start Speaking the Language</h1>
+				</div>
+			</div>
+
+			<div class="course-section row lean-left">
+				<div class="col-lg-10 col-sm-offset-1">
+					<div
+						class="course-box container white-out"
+					>
+						<div class="row">
+							<div class="col-lg-6">
+								<div style="padding:20px">
+								<img src="{{course_detail.image_url}}" alt="random image for {{course_detail.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-6 course-text">
-							<p><b>{{course_detail.course_name}}</b></p>
-							<p>{{course_detail.description}}</p>
-							<a target="_blank" href="{{course_detail.registration_link}}"><button class="yellowButton-md">Reserve a spot</button></a>
+							<div class="col-lg-6 course-text">
+								<p><b>{{course_detail.course_name}}</b></p>
+								<p>{{course_detail.description}}</p>
+								<a target="_blank" href="{{course_detail.registration_link}}"><button class="yellowButton-md">Reserve a spot</button></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+
 		</div>
-				
-		<div class="row row-section gx-4 gx-lg-5 align-items-center my-5 p-10" style="padding-top:25px; padding-bottom:25px;">
-			<div class="col-lg-10 flexbox col-sm-offset-1" >
-				<h1>Parent Reviews</h1>
-					<div class="row justify-content-center" style="display: flex;
-					justify-content: center;
-					align-items: center;">
-						<div class="col-sm-4" style=" line-height: normal; font-size:14px; margin: 10px; padding: 40px; background-image:url('https://i.ibb.co/mHW4wyK/yellow-blob.png');  background-position: center;background-size:contain; background-repeat:no-repeat; text-align:center; vertical-align:center;">
-							<div style="padding: 25px;">
-							<p>“Kamusta Kids is a young company that does a great job at approaching their mixed age classes. I’m learning so much along with my kids!”</p>
-							<p><b>Daughters, ages 5 and 8</b></p>
-							<p>Jeremy Villegas</p>
-							</div>
-						</div>
-						<div class="col-sm-4" style=" line-height: normal; font-size:14px; margin: 10px; padding: 40px; background-image:url('https://i.ibb.co/mHW4wyK/yellow-blob.png');  background-position: center;background-size:contain; background-repeat:no-repeat; text-align:center; vertical-align:center;">
-							<div style="padding: 25px;">
-							<p>“My son likes class so much! He’s very outgoing and playful, and gains a lot from the small group activities.”</p>
-							<p><b>Son, age 6</b></p>
-							<p>Jereena Manongdo</p>
-							</div>
-						</div>
-						<div class="col-sm-4" style=" line-height: normal; font-size:14px; margin: 10px; padding: 40px; background-image:url('https://i.ibb.co/mHW4wyK/yellow-blob.png');  background-position: center;background-size:contain; background-repeat:no-repeat; text-align:center; vertical-align:center;">
-							<div style="padding: 25px;">
-							<p>“I am so thankful that my daughter gets to learn both the Filipino language AND the customs in this robust curriculum!”</p>
-							<p><b>Daughter, age 10</b></p>
-							<p>Marylou Montemayor</p>
-							</div>
-						</div>
-				</div>
-			</div>
-		</div>
-		<div class="row row-section gx-4 gx-lg-5 align-items-center my-5" style="padding-top:25px; padding-bottom:25px;">
-			<div class="col-lg-6 col-sm-offset-3" style="text-align: center;">
-				<h1>Start Speaking the Language</h1>
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerGsZUiO0tjr8tBDL4FZvjSQG7PHJoX1Y5gHWiNE609Yicaw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-			</div>
-		</div>
-	</div>
 		{% endblock %}
 	</body>
 </html>

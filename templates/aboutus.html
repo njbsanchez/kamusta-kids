@@ -1,31 +1,12 @@
 {% extends 'base.html' %} {% block title %}About Us{% endblock %}
+
 <head> 
-	<style>
-		.center {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-		}
+	{% block head %}
+	<meta carset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		h1 {
-			font-family: Suez One;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 36px;
-			line-height: 47px;
-
-			color: #FFFFFF;
-
-		}
-		h3 {
-			color: light;
-		}
-		
-		.right-side {
-			text-align: right;
-		}
-	</style>
+	<link rel="stylesheet" href="about.css" />
+	{% endblock %}
 </head>
 
 <body>

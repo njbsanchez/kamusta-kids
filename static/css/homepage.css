@@ -1,33 +1,41 @@
-.parent-reviews {
-    margin: 20px;
-    padding: 60px;
-    background-image:url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
-    background-size:contain;
-    background-repeat:no-repeat;
-}
-
 @media only screen and (min-width: 575px) {
-.course-small {
+	.course-small {
 		display: none;
 	}
+    .parent-reviews {
+        margin: 20px;
+        padding: 60px;
+        background-image:url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
+        background-size:contain;
+        background-repeat:no-repeat;
+    }
 }
 
 @media only screen and (max-width: 574px) {
+	.headtext.col-lg-6 {
+		margin-top: 15px;
+		margin-bottom: 35px;
+	}
 
-    .headtext.col-lg-6 {
-        margin-top: 15px;
-        margin-bottom: 35px;
-    }
-    .col-lg-6.course-text {
-        padding: 0px;
-    }
-    .screenshot {
-        width: 80%;
-    }
-    
-    .course-small {
-        background: #675e9b;
-        color: #ffffff;
-    }
-    
+	.col-lg-6.course-text {
+		padding: 0px;
+	}
+
+	.screenshot {
+		width: 80%;
+	}
+
+	.course-small {
+		background: #675e9b;
+		color: #ffffff;
+	}
+
+	.leaf1 {
+		position: absolute;
+		top: 130%;
+		left: 0px;
+		width: 200px;
+		height: auto;
+		z-index: -1;
+	}
 }

@@ -1,6 +1,11 @@
 {% extends 'base.html' %} {% block title %}Kamusta Kids{% endblock %}
 
 <html lang="en">
+	<head>
+		{% block head %}
+		<link rel="stylesheet" href="/static/css/homepage.css" />
+		{% endblock %}
+	</head>
 	<body>
 		{% block body%}
 		<div class="wrapper container">
@@ -39,16 +44,7 @@
 				<img
 					src="https://i.ibb.co/WkQx005/leaf1.png"
 					alt="leaf1"
-					border="0"
-					class="leaf1"
-					style="
-						position: absolute;
-						top: -15%;
-						left: -8px;
-						width: 50%;
-						height: auto;
-						z-index: -1;
-					"
+					class="leaf leaf1"
 					loading="lazy"
 				/>
 				<div class="col-md-8 col-md-offset-1">
@@ -69,18 +65,8 @@
 				</div>
 				<img
 					src="https://i.ibb.co/yV7xHZn/leaf5.png"
-					alt="leaf1"
-					border="0"
-					class="leaf1"
-					style="
-						position: absolute;
-						bottom: -15%;
-						right: 0px;
-						width: 50%;
-						height: auto;
-						z-index: -1;
-						padding: 0px;
-					"
+					alt="leaf2"
+					class="leaf leaf2"
 					loading="lazy"
 				/>
 			</div>
@@ -107,18 +93,8 @@
 			>
 				<img
 					src="https://i.ibb.co/yV7xHZn/leaf5.png"
-					alt="leaf1"
-					border="0"
-					class="leaf1"
-					style="
-						position: absolute;
-						top: -20%;
-						right: 0px;
-						width: 50%;
-						height: auto;
-						z-index: -1;
-						padding: 0px;
-					"
+					alt="leaf3"
+					class="leaf leaf3"
 					loading="lazy"
 				/>
 				<div class="col-sm-9" style="">
@@ -132,17 +108,8 @@
 				</div>
 				<img
 					src="https://i.ibb.co/vsY5PhT/leaf2.png"
-					alt="leaf2"
-					border="0"
-					class="leaf4"
-					style="
-						position: absolute;
-						bottom: -30%;
-						left: -8px;
-						width: 50%;
-						height: auto;
-						z-index: -1;
-					"
+					alt="leaf4"
+					class="leaf leaf4"
 					loading="lazy"
 				/>
 			</div>
@@ -170,18 +137,8 @@
 				</div>
 				<img
 					src="https://i.ibb.co/yV7xHZn/leaf5.png"
-					alt="leaf1"
-					border="0"
-					class="leaf1"
-					style="
-						position: absolute;
-						bottom: -5%;
-						right: 0px;
-						width: 50%;
-						height: auto;
-						z-index: -1;
-						padding: 0px;
-					"
+					alt="leaf5"
+					class="leaf leaf5"
 					loading="lazy"
 				/>
 			</div>
@@ -268,125 +225,60 @@
 				>
 					<img
 						src="https://i.ibb.co/yV7xHZn/leaf5.png"
-						alt="leaf1"
-						border="0"
-						class="leaf1"
-						style="
-							position: absolute;
-							top: 0%;
-							right: 0px;
-							width: 50%;
-							height: auto;
-							z-index: -1;
-							padding: 0px;
-						"
+						alt="leaf6"
+						class="leaf leaf6"
 						loading="lazy"
 					/>
+					
 					<img
 						src="https://i.ibb.co/vsY5PhT/leaf2.png"
-						alt="leaf2"
-						border="0"
-						class="leaf4"
-						style="
-							position: absolute;
-							bottom: 40%;
-							left: -8px;
-							width: 50%;
-							height: auto;
-							z-index: -1;
-						"
+						alt="leaf7"
+						class="leaf leaf7"
 						loading="lazy"
 					/>
 					<img
 						src="https://i.ibb.co/yV7xHZn/leaf5.png"
-						alt="leaf1"
-						border="0"
-						class="leaf1"
-						style="
-							position: absolute;
-							top: 60%;
-							right: 0px;
-							width: 50%;
-							height: auto;
-							z-index: -1;
-							padding: 0px;
-						"
+						alt="leaf8"
+						class="leaf leaf8"
 						loading="lazy"
 					/>
 
 					<div
-						class="col-sm-4"
-						style="
-							line-height: normal;
-							font-size: 14px;
-							margin: 0px;
-							padding: 40px;
-							background-image: url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
-							background-position: center;
-							background-size: 90%;
-							background-repeat: no-repeat;
-							text-align: center;
-							vertical-align: center;
-						"
+						class="col-sm-4 blob"
 					>
-						<div style="padding-top: 15px">
-							<p style="line-height: 20px">
+						<div class="blobinside">
+							<p class="blobp">
 								“Kamusta Kids is a young company that does a great job at
 								approaching their mixed age classes. I’m learning so much along
 								with my kids!”
 							</p>
-							<p style="line-height: 20px"><b>Daughters, ages 5 and 8</b></p>
-							<p style="line-height: 20px">Jeremy Villegas</p>
+							<p class="blobp"><b>Daughters, ages 5 and 8</b></p>
+							<p class="blobp">Jeremy Villegas</p>
 						</div>
 					</div>
 
 					<div
-						class="col-sm-4"
-						style="
-							line-height: normal;
-							font-size: 14px;
-							margin: 0px;
-							padding: 40px;
-							background-image: url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
-							background-position: center;
-							background-size: 90%;
-							background-repeat: no-repeat;
-							text-align: center;
-							vertical-align: center;
-						"
+						class="col-sm-4 blob"
 					>
-						<div style="padding-top: 15px">
-							<p style="line-height: 20px">
+						<div class="blobinside">
+							<p class="blobp">
 								“My son likes class so much! He’s very outgoing and playful, and
 								gains a lot from the small group activities.”
-							</p>
-							<p style="line-height: 20px"><b>Son, age 6</b></p>
-							<p style="line-height: 20px">Jereena Manongdo</p>
+							</p	>
+							<p class="blobp"><b>Son, age 6</b></p>
+								<p class="blobp">Jereena Manongdo</p>
 						</div>
 					</div>
 
 					<div
-						class="col-sm-4"
-						style="
-							line-height: normal;
-							font-size: 14px;
-							margin: 0px;
-							padding: 40px;
-							background-image: url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
-							background-position: center;
-							background-size: 90%;
-							background-repeat: no-repeat;
-							text-align: center;
-							vertical-align: center;
-						"
-					>
-						<div style="padding-top: 15px">
-							<p style="line-height: 20px">
+						class="col-sm-4 blob"
+						<div class="blobinside">
+							<p class="blobp">
 								“I am so thankful that my daughter gets to learn both the
 								Filipino language AND the customs in this robust curriculum!”
 							</p>
-							<p style="line-height: 20px"><b>Daughter, age 10</b></p>
-							<p style="line-height: 20px">Marylou Montemayor</p>
+							<p class="blobp"><b>Daughter, age 10</b></p>
+							<p class="blobp">Marylou Montemayor</p>
 						</div>
 					</div>
 				</div>
@@ -398,7 +290,7 @@
 				<h1>Start Speaking the Language</h1>
 			</div>
 		</div>
-		<div class="row" style="background: #675e9b; color: #ffffff">
+		<div class="row course-small">
 			<div class="col-lg-10 col-sm-offset-1">
 				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerGsZUiO0tjr8tBDL4FZvjSQG7PHJoX1Y5gHWiNE609Yicaw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 			</div>

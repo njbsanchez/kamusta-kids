@@ -1,47 +1,43 @@
 {% extends 'base.html' %} {% block title %}About Us{% endblock %}
 <head> 
-	<style>
-		.center {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-		}
+	{% block head %}
+	<meta carset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		h1 {
-			font-family: Suez One;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 36px;
-			line-height: 47px;
-
-			color: #FFFFFF;
-
-		}
-		h3 {
-			color: light;
-		}
-		.bluebutton {
-			background: #6499D0;
-			box-shadow: 0px 5px 0px #2C659F;
-			border-radius: 5px;
-		}
-		.right-side {
-			text-align: right;
-		}
-	</style>
+	<link rel="stylesheet" href="about.css" />
+	{% endblock %}
 </head>
 
 <body>
 	{% block body%}
-	<div class="row align-items-center" style="background: #5E719B">
-		<div class="col-lg-6"><img src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png" alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2" border="0"></div>
-		<div class="col-lg-4 col-sm-offset-1" >
-			<h1 class="white-out">How Learning Works</h1>
-			<p class="white-out">Info coming soon! For now, you can…</p>
-			<a href="/courses"><button class="yellowButton-lg">See Tagalog Lessons</button></a>
-			<a href="/request-info"><button class="blueButton-lg">Ask a Question</button></a>
-		</div>	
+
+	<div class="wrapper container">
+		<div class="headhead row">
+			
+			<div class="col-lg-6 order-lg-0">
+				<img
+					style="width: 100%"
+					src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png"
+					alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2"
+					border="0"
+				/>
+			</div>
+
+			<div class="headtext col-lg-6 order-lg-1">
+				<div class="container-fluid">
+					<h1 class="white-out" style="text-align: center">
+						How Learning Works
+					</h1>
+					<p class="white-out lean-left">
+						Info coming soon! For now, you can…
+					</p>
+
+					<a href="/courses"><button class="yellowButton-md">See Tagalog Lessons</button></a>
+					<a href="/request-info"><button class="blueButton-md">Ask a Question</button></a>
+
+				</div>
+			</div>
+		</div>
 	</div>
 	{% endblock %}
 

@@ -1,0 +1,43 @@
+div {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    font-family: Suez One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    color: #ffffff;
+}
+
+.white-out {
+    color: #ffffff;
+}
+
+.right-side {
+    text-align: right;
+}
+
+.class-category {
+    text-align: center;
+    background: #5e719b;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.class_level {
+    background: #675e9b;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+https://codepen.io/fainder/pen/qBwBeO

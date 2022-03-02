@@ -31,6 +31,7 @@
     font-weight: bold;
 } */
 
+
 .col-lg-6 {
     padding: 0px 0px;
 }
@@ -47,10 +48,16 @@
     text-align:left;
 }
 
+
+
 /* large view */
 @media only screen and (min-width: 575px) {
 	.menu-cond {
 		display: none;
+	}
+
+	.wrapper {
+		text-align: right;
 	}
 }
 
@@ -64,9 +71,6 @@ h1 {
 	line-height: 47px;
 
 	color: #000000;
-
-    padding-top: 15px;
-    padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -115,6 +119,11 @@ ol {
     padding-right: 10px;
 }
 
+br.responsive {
+    display: none; 
+	/* Hide BR tag for wider screens */
+  }
+
 label {
 	font-family: Poppins;
 	font-style: normal;
@@ -134,6 +143,38 @@ body {
 bod-extra {
 	background-image: url('https://i.ibb.co/S60Kg7y/Untitled-design-4.png');
 	background-repeat: repeat-y;
+}
+
+.top-baby {
+	padding-top: 15px;
+}
+
+.bottom-baby {
+	padding-bottom:15px;
+}
+
+.top-mama {
+	padding-top: 25px;
+}
+
+.bottom-mama {
+	padding-bottom:25px;
+}
+
+.top-papa {
+	padding-top: 35px;
+}
+
+.bottom-papa {
+	padding-bottom:35px;
+}
+
+.top-grand {
+	padding-top: 50px;
+}
+
+.bottom-grand {
+	padding-bottom:50px;
 }
 
 .white-out {
@@ -160,8 +201,6 @@ bod-extra {
 	border-radius: 70px;
 	box-shadow: 0px 5px 0px #e2ab19;
 	color: black;
-    margin-bottom: 35px;
-    margin-top: 20px;
 }
 
 .yellowButton-md {
@@ -186,8 +225,8 @@ bod-extra {
 	border-radius: 70px;
 	box-shadow: 0px 5px 0px #e2ab19;
 	color: black;
-    margin-bottom: 35px;
-    margin-top: 20px;
+    /* margin-bottom: 35px;
+    margin-top: 20px; */
 }
 
 .yellowButton-lg {
@@ -212,8 +251,6 @@ bod-extra {
 	border-radius: 70px;
 	box-shadow: 0px 5px 0px #e2ab19;
 	color: black;
-    margin-bottom: 35px;
-    margin-top: 20px;
 }
 
 .blueButton-lg {
@@ -237,8 +274,29 @@ bod-extra {
 	border-radius: 5px;
 	box-shadow: 0px 5px 0px #2c659f;
 	color: black;
-    margin-bottom: 35px;
-    margin-top: 20px;
+}
+
+.blueButton-md {
+	width: 40%;
+	height: 45px;
+	left: 798.29px;
+	top: 435px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	background-color: #6499d0;
+	border: none;
+	color: w;
+	padding: 10px 20px;
+	padding-top: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 15px 4px;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0px 5px 0px #2c659f;
+	color: black;
 }
 
 .white-out {
@@ -364,14 +422,14 @@ footer {
         color: #ffffff;
     }
 	.wrapper {
-		text-align: right;
+		text-align: center;
 	}
 
     /* text */
     h1 {
 
-        font-size: 25px;
-        line-height: 33px;
+        font-size: 22px;
+        line-height: 28.73px;
 
     }
 

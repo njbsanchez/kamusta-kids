@@ -30,6 +30,10 @@
 		color: #ffffff;
 	}
 
+	.course-large {
+		display: none;
+	}
+
 	.blob {
 		
 		font-size: 14px;
@@ -61,27 +65,27 @@
 	}
 
 	.leaf1 {
-		top: -15%;
-		left: -8px;
+		bottom: -190%;
+   		left: -8px;
 	}
 
 	.leaf2 {
-		bottom: -15%;
+		bottom: -115%;
 		right: 0px;
 	}
 
 	.leaf3 {
-		top: -20%;
+		top: 0%;
 		right: 0px;
 	}
 
 	.leaf4 {
-		bottom: -30%;
+		bottom: -5%;
 		left: -8px;
 	}
 
 	.leaf5 {
-		bottom: -5%;
+		bottom: -110px;
 		right: 0px;
 		width: 50%;
 	}

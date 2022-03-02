@@ -11,14 +11,35 @@
 
 <body>
 	{% block body%}
-	<div class="row align-items-center" style="background: #5E719B">
-		<div class="col-lg-4 col-sm-offset-1" >
-			<h1 class="white-out">About Us</h1>
-			<p class="white-out">Info coming soon! For now, you can…</p>
-			<a href="/courses"><button class="yellowButton-lg">See Tagalog Lessons</button></a>
-			<a href="/request-info"><button class="blueButton-lg">Ask a Question</button></a>
+	<div class="wrapper container">
+		<div class="headhead row">
+			
+			<div class="col-lg-6 order-lg-1">
+				<img
+					style="width: 100%"
+					src="https://i.ibb.co/cgHP0Tf/rendy-novantino-Cj-Lvl-J8-FE-unsplash.png"
+					alt="rendy-novantino-Cj-Lvl-J8-FE-unsplash"
+					border="0"
+				/>
+			</div>
+
+			<div class="headtext col-lg-6 order-lg-0">
+				<div class="container-fluid">
+					<h1 class="white-out" style="text-align: center">
+						About Us
+					</h1>
+					<p class="white-out lean-left">
+						Info coming soon! For now, you can…
+					</p>
+
+					<a href="/courses"><button class="yellowButton-md">See Tagalog Lessons</button></a>
+					<a href="/request-info"><button class="blueButton-md">Ask a Question</button></a>
+
+				</div>
+			</div>
+			
+			
 		</div>
-		<div class="col-lg-6 col-sm-offset-1"><img style="width: 100%" src="https://i.ibb.co/cgHP0Tf/rendy-novantino-Cj-Lvl-J8-FE-unsplash.png" alt="rendy-novantino-Cj-Lvl-J8-FE-unsplash" border="0"></div>
 	</div>
 	{% endblock %}
 </body>

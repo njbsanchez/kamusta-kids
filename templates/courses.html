@@ -1,64 +1,39 @@
 {% extends 'base.html' %} {% block title %}Courses{% endblock %}
 <head>
 	<style>
-		div {
-			padding-top: 0px;
-			padding-bottom: 0px;
-		}
 
-		.center {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-		}
-
-		h1 {
-			font-family: Suez One;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 36px;
-			line-height: 47px;
-			color: #ffffff;
-		}
-
-		.white-out {
-			color: #ffffff;
-		}
-
-		.right-side {
-			text-align: right;
-		}
-
-		.class-category {
-			text-align: center;
-			background: #5e719b;
-			border-radius: 5px;
-			color: #ffffff;
-		}
-
-		.class_level {
-			background: #675e9b;
-			border-radius: 5px;
-			color: #ffffff;
-		}
 	</style>
 </head>
 
 <body>
 	{% block body%}
-	<div class="row align-items-center" style="background: #5E719B">
-		<div class="col-lg-6"><img src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png" alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2" border="0"></div>
-		<div class="col-lg-4 col-sm-offset-1" >
-			<h1 class="white-out">Courses</h1>
-			<p class="white-out">
-				Our virtual Tagalog lessons cover practical themes to reinforce
-				speaking at home. As well as, ethnic customs to explore Filipino
-				roots.
-			</p>
-			<a href="/request-info"><button class="blueButton-lg">Ask a Question</button></a>		
-		</div>	
+
+
+	<div class="wrapper container">
+		<div class="headhead row">
+			
+			<div class="col-lg-6 order-lg-0">
+				<img
+					style="width: 100%"
+					src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png"
+					alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2"
+					border="0"
+				/>
+			</div>
+
+			<div class="headtext col-lg-6 order-lg-1">
+				<div class="container-fluid">
+					<h1 class="white-out" style="text-align: center">
+						Courses
+					</h1>
+					<p class="white-out lean-left">
+						Our virtual Tagalog lessons cover practical themes to reinforce speaking at home. As well as, ethnic customs to explore Filipino roots.
+					</p>
+				</div>
+			</div>			
+		</div>
 	</div>
+
 
 	<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
 		<div class="col-lg-10 col-sm-offset-1">
@@ -112,52 +87,57 @@
 
 	{% for cat in cat_details %}
 
-		<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
-			<div class="col-lg-10 col-sm-offset-1">
-				<div
-					class="container white-out"
-					style="
-						text-align: center;
-						background: #5e719b;
-						border-radius: 5px;
-						color: #ffffff;
-					"
-				>
-					<h1>{{cat.cat_name}}</h1>
-					<p>Pre-requisites: {{cat.pre_req}}</p>
-				</div>
-			</div>
-		</div>
-
-		{% for d in cat.courses %}
-
+		
 			<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+				<button class="accordion">
 				<div class="col-lg-10 col-sm-offset-1">
 					<div
 						class="container white-out"
 						style="
-							background: #675e9b;
+							text-align: center;
+							background: #5e719b;
 							border-radius: 5px;
 							color: #ffffff;
 						"
 					>
-						<div class="row">
-							<div class="col-lg-6">
-								<div style="padding:20px">
-								<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+						<h1>{{cat.cat_name}}</h1>
+						<p>Pre-requisites: {{cat.pre_req}}</p>
+					</div>
+				</div>
+			
+		</button>
+	</div>
+		<div class="panel" style="display:none;">
+			{% for d in cat.courses %}
+
+				<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+					<div class="col-lg-10 col-sm-offset-1">
+						<div
+							class="container white-out"
+							style="
+								background: #675e9b;
+								border-radius: 5px;
+								color: #ffffff;
+							"
+						>
+							<div class="row">
+								<div class="col-lg-6">
+									<div style="padding:20px">
+									<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+									</div>
 								</div>
-							</div>
-							<div class="col-lg-6 my-auto" style="padding:50px">
-								<p><b>{{d.course_name}}</b></p>
-								<p>{{d.description}}</p>
-								<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
+								<div class="col-lg-6 my-auto" style="padding:50px">
+									<p><b>{{d.course_name}}</b></p>
+									<p>{{d.description}}</p>
+									<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		{%endfor%}	
-	
+			{%endfor%}	
+		</div>
+
 	{%endfor%}	
 
 	<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
@@ -186,6 +166,23 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+			  panel.style.display = "none";
+			} else {
+			  panel.style.display = "block";
+			}
+		  });
+		}
+		</script>
 
 	{% endblock %}
 </body>

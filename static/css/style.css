@@ -1,67 +1,34 @@
-/* navigation bar */
+/* ---------- navigation bar ---------- */
 
-/* .navbar {
-    background: #FDFDFD;
+/* ---------- formatting ---------- */
 
-} */
-
-/* .logo-box {
-    margin-top: 5px
-} */
-/* 
-.img-logo {
-    width: 60%;
+.page-stuff {
+	overflow: hidden;
+	width:100%;
 }
-
-.logo-text {
-    font-size: 14px;
-    text-align: center;
-}
-
-.nav-text {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-}
-
-.nav-text nav-item {
-    font-weight: bold;
-} */
-
-
-.col-lg-6 {
-    padding: 0px 0px;
-}
-
-.headhead{
-    background: #5E719B;
-}
-
 .lean-right {
     text-align:right;
 }
-
 .lean-left {
     text-align:left;
 }
-
-
-
-/* large view */
-@media only screen and (min-width: 575px) {
-	.menu-cond {
-		display: none;
-	}
-
-	.wrapper {
-		text-align: right;
-	}
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+page-container {
+	position: relative;
+	min-height: 100vh;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem; /* Footer height */
 }
 
-/* text */
+/* ---------- text ---------- */
 
 h1 {
 	font-family: Suez One;
@@ -74,7 +41,6 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 h2 {
 	font-family: Suez One;
 	font-style: normal;
@@ -87,7 +53,6 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 h3 {
 	font-family: Poppins;
 	font-style: normal;
@@ -100,7 +65,6 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 p, ol {
 	font-family: Poppins;
 	font-style: normal;
@@ -113,17 +77,14 @@ p, ol {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 ol {
     padding-left: 30px;
     padding-right: 10px;
 }
-
 br.responsive {
     display: none; 
 	/* Hide BR tag for wider screens */
   }
-
 label {
 	font-family: Poppins;
 	font-style: normal;
@@ -133,60 +94,73 @@ label {
 
 	color: #000000;
 }
-
-body {
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
+.white-out{
+	color: #ffffff;
+}
+.white-out h1 {
+	color: #ffffff;
+}
+.white-out p {
+	color: #ffffff;
 }
 
-bod-extra {
-	background-image: url('https://i.ibb.co/S60Kg7y/Untitled-design-4.png');
-	background-repeat: repeat-y;
-}
+/* --------- spacing ---------- */
 
 .top-baby {
 	padding-top: 15px;
 }
-
 .bottom-baby {
 	padding-bottom:15px;
 }
-
 .top-mama {
 	padding-top: 25px;
 }
-
 .bottom-mama {
 	padding-bottom:25px;
 }
-
 .top-papa {
 	padding-top: 35px;
 }
-
 .bottom-papa {
 	padding-bottom:35px;
 }
-
 .top-grand {
 	padding-top: 50px;
 }
-
 .bottom-grand {
 	padding-bottom:50px;
 }
-
-.white-out {
-	color: #ffffff;
+.mtop-baby {
+	margin-top: 15px;
 }
-
+.mbottom-baby {
+	margin-bottom:15px;
+}
+.mtop-mama {
+	margin-top: 25px;
+}
+.mbottom-mama {
+	margin-bottom:25px;
+}
+.mtop-papa {
+	margin-top: 35px;
+}
+.mbottom-papa {
+	margin-bottom:35px;
+}
+.mtop-grand {
+	margin-top: 50px;
+}
+.mbottom-grand {
+	padding-bottom:50px;
+}
 .mr-auto {
 	margin: auto !important;
 	justify-content: space-between;
 }
 
-/* buttons */
+
+/* --------- buttons ----------- */
 
 .yellowButton-sm {
 	background-color: #f5d015;
@@ -202,7 +176,6 @@ bod-extra {
 	box-shadow: 0px 5px 0px #e2ab19;
 	color: black;
 }
-
 .yellowButton-md {
 	width: 40%;
 	height: 45px;
@@ -228,7 +201,6 @@ bod-extra {
     /* margin-bottom: 35px;
     margin-top: 20px; */
 }
-
 .yellowButton-lg {
 	width: 100%;
 	height: 45px;
@@ -252,7 +224,6 @@ bod-extra {
 	box-shadow: 0px 5px 0px #e2ab19;
 	color: black;
 }
-
 .blueButton-lg {
 	width: 100%;
 	height: 45px;
@@ -275,7 +246,6 @@ bod-extra {
 	box-shadow: 0px 5px 0px #2c659f;
 	color: black;
 }
-
 .blueButton-md {
 	width: 40%;
 	height: 45px;
@@ -299,27 +269,13 @@ bod-extra {
 	color: black;
 }
 
-.white-out {
-	color: #ffffff;
+/* header section */
+
+.header-section{
+    background: #5E719B;
 }
 
-page-container {
-	position: relative;
-	min-height: 100vh;
-}
-
-content-wrap {
-	padding-bottom: 2.5rem; /* Footer height */
-}
-
-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 2.5rem; /* Footer height */
-}
-
-.sectionHeader {
+/* .sectionHeader {
 	text-align: center;
 	background: #5e719b;
 	border-radius: 5px;
@@ -338,117 +294,5 @@ footer {
 
 .course-img {
     padding: 15px;
-}
-
-/* .navbar-toggle .icon-bar{
-    width: 100px !important;
-    height:100px !important;
-  }
-
-  footer {
-    clear: both;
-    position: relative;
-    margin-top: auto;
 } */
 
-@media only screen and (max-width: 574px) {
-	.menu-full {
-		display: none;
-	}
-
-	/* navbar */
-
-	.img-logo {
-		height: 100%;
-	}
-	.logo-box {
-		margin-top: 0px;
-		align-items: center;
-	}
-	.navbar-light .navbar-toggler {
-		color: rgba(0, 0, 0, 0.55);
-		border-color: rgba(255, 255, 255, 0);
-		/* margin-left: 10%; */
-	}
-	.navbar {
-		margin-bottom: 0px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		justify-content: space-between;
-	}
-    .navbar-brand {
-        padding: 0px 0px;
-        height: 75px;
-		margin-right: 5rem;
-    }
-	.navcontainer {
-		display: flex;
-		justify-content: space-between;
-	}
-	.navbar-toggler-icon {
-		width: 3.5em;
-		height: 3.5em;
-	}
-    .navbar-light .navbar-nav .offlink {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        text-align: right;
-        color: #ffffff;
-    }
-
-	/* off-canvas menu */
-
-    .offcanvas {
-        background-color: rgb(0, 0, 0);
-        max-width: 80%;
-    }
-	.offcanvas-end {
-		padding: 10px;
-	}
-    .offcanvas-body .navbar-nav {
-        margin: 15px 5px;
-        align-items: end;
-    }
-    .offlink {
-        margin-bottom: 33px;
-    }
-    .offcanvas-end .offcanvas-header .btn-close {
-        font-size: 25px;
-        color: #ffffff;
-    }
-    button .btn-close .btn-reset {
-        color: #ffffff;
-    }
-	.wrapper {
-		text-align: center;
-	}
-
-    /* text */
-    h1 {
-
-        font-size: 22px;
-        line-height: 28.73px;
-
-    }
-
-    p, ol {
-
-        font-size: 16px;
-        line-height: 36px;
-
-    }
-
-    /* buttons */
-
-    .yellowButton-sm, .yellowButton-md, .yellowButton-lg  {
-        width: 95%;
-    
-    }
-    .blueButton-md, .blueButton-lg  {
-        width: 95%;
-        
-    }
-    
-}

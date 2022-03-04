@@ -1,0 +1,49 @@
+/* large view */
+@media only screen and (min-width: 575px) {
+	.menu-cond {
+		display: none;
+	}
+
+	.wrapper {
+		text-align: right;
+	}
+
+	.course-section .course-section-header {
+		border-radius: 5px;
+	}
+
+    .navbar {
+        background: #FDFDFD;
+
+    }
+
+    .logo-box {
+        margin-top: 5px
+    }
+
+    .img-logo {
+        width: 60%;
+    }
+
+    .logo-text {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .nav-text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .nav-text nav-item {
+        font-weight: bold;
+    }
+
+
+
+
+}

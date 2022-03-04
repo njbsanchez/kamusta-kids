@@ -1,14 +1,4 @@
-div {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
 h1 {
     font-family: Suez One;
@@ -27,6 +17,16 @@ h1 {
     text-align: right;
 }
 
+
+.course-section-header {
+	text-align: center;
+	background: #5e719b;
+}
+
+.course-section {
+	background: #5e719b;
+}
+
 .class-category {
     text-align: center;
     background: #5e719b;
@@ -40,4 +40,13 @@ h1 {
     color: #ffffff;
 }
 
-https://codepen.io/fainder/pen/qBwBeO
+
+/* large view */
+@media only screen and (min-width: 575px) {
+
+
+	.course-section .course-section-header {
+		border-radius: 5px;
+	}
+
+}

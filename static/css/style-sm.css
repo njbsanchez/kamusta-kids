@@ -1,0 +1,102 @@
+
+@media only screen and (max-width: 574px) {
+	.menu-full {
+		display: none;
+	}
+
+	/* navbar */
+
+	.img-logo {
+		height: 100%;
+	}
+	.logo-box {
+		margin-top: 0px;
+		align-items: center;
+	}
+	.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, 0.55);
+		border-color: rgba(255, 255, 255, 0);
+		/* margin-left: 10%; */
+	}
+	.navbar {
+		margin-bottom: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		justify-content: space-between; 
+	}
+    .navbar-brand {
+        padding: 0px 0px;
+        height: 75px;
+		margin-right: 5rem;
+    }
+	.navcontainer {
+		display: flex;
+		justify-content: space-between;
+	}
+	.navbar-toggler-icon {
+		width: 3.5em;
+		height: 3.5em;
+	}
+    .navbar-light .navbar-nav .offlink {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: right;
+        color: #ffffff;
+    }
+
+	/* off-canvas menu */
+
+    .offcanvas {
+        background-color: rgb(0, 0, 0);
+        max-width: 80%;
+    }
+	.offcanvas-end {
+		padding: 10px;
+	}
+    .offcanvas-body .navbar-nav {
+        margin: 15px 5px;
+        align-items: end;
+    }
+    .offlink {
+        margin-bottom: 33px;
+    }
+    .offcanvas-end .offcanvas-header .btn-close {
+        font-size: 25px;
+        color: #ffffff;
+    }
+    button .btn-close .btn-reset {
+        color: #ffffff;
+    }
+	.wrapper {
+		text-align: center;
+	}
+
+    /* text */
+    h1 {
+
+        font-size: 22px;
+        line-height: 28.73px;
+
+    }
+
+    p, ol {
+
+        font-size: 16px;
+        line-height: 36px;
+
+    }
+
+    /* buttons */
+
+    .yellowButton-sm, .yellowButton-md, .yellowButton-lg  {
+        width: 95%;
+    
+    }
+    .blueButton-md, .blueButton-lg  {
+        width: 95%;
+        
+    }
+    
+}

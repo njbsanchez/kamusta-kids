@@ -1,3 +1,24 @@
+.blob {
+		
+	font-size: 14px;
+	margin: 0px;
+	padding: 40px;
+	background-image: url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
+	background-position: center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: center;
+}
+
+.blobinside {
+	padding-top: 15px;
+}
+
+.blobp {
+	line-height: 20px;
+}
+
 @media only screen and (min-width: 575px) {
 	.course-small {
 		display: none;
@@ -6,24 +27,22 @@
 		margin: 20px;
 		padding: 60px;
 		background-image: url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
-		background-size: contain;
+		background-size: cover;
 		background-repeat: no-repeat;
 	}
+
+	.leaf1 {
+		position: absolute;
+		width: 42%;
+		height: auto;
+		top: 0%;
+		left: 0%;
+		z-index: -10;
+	}
+
 }
 
 @media only screen and (max-width: 574px) {
-	/* .headtext.col-lg-6 {
-		margin-top: 15px;
-		margin-bottom: 35px;
-	}
-
-	.col-lg-6.course-text {
-		padding: 0px;
-	}
-
-	.screenshot {
-		width: 80%;
-	} */
 
 	.course-small {
 		background: #675e9b;
@@ -34,75 +53,6 @@
 		display: none;
 	}
 
-	.blob {
-		
-		font-size: 14px;
-		margin: 0px;
-		padding: 40px;
-		background-image: url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
-		background-position: center;
-		background-size: 90%;
-		background-repeat: no-repeat;
-		text-align: center;
-		vertical-align: center;
-	}
-
-	.blobinside {
-		padding-top: 15px;
-	}
-
-	.blobp {
-		line-height: 20px;
-	}
 
 
-	.leaf {
-		position: absolute;
-		width: 50%;
-		height: auto;
-		z-index: -1;
-		padding: 0px;
-	}
-
-	.leaf1 {
-		bottom: -190%;
-   		left: -8px;
-	}
-
-	.leaf2 {
-		bottom: -115%;
-		right: 0px;
-	}
-
-	.leaf3 {
-		top: 0%;
-		right: 0px;
-	}
-
-	.leaf4 {
-		bottom: -5%;
-		left: -8px;
-	}
-
-	.leaf5 {
-		bottom: -110px;
-		right: 0px;
-		width: 50%;
-	}
-
-	.leaf6 {
-		top: 0%;
-		right: 0px;
-		width: 50%;
-	}
-
-	.leaf7 {
-		bottom: 40%;
-		left: -8px;
-	}
-
-	.leaf8 {
-		top: 60%;
-		right: 0px;
-	}
 }

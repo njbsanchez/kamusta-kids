@@ -1,3 +1,4 @@
+
 .blob {
 		
 	font-size: 14px;
@@ -12,11 +13,17 @@
 }
 
 .blobinside {
-	padding-top: 15px;
+	padding: 20px;
 }
 
 .blobp {
 	line-height: 20px;
+}
+
+.ig-posts {
+	background-color: #F5D015;
+	border-radius: 40px;
+	padding:20px;
 }
 
 @media only screen and (min-width: 575px) {
@@ -35,10 +42,70 @@
 		position: absolute;
 		width: 42%;
 		height: auto;
-		top: 0%;
+		top: 20%;
 		left: 0%;
 		z-index: -10;
 	}
+
+	.leaf2 {
+		position: absolute;
+		width: 42%;
+		height: auto;
+		bottom: -10%;
+		right: 0%;
+		z-index: -10;
+	}
+
+	.leaf3 {
+		position: absolute;
+		width: 42%;
+		height: auto;
+		top: -45%;
+		left: -35%;
+		z-index: -10;
+		transform: rotate(-30deg);
+	}
+
+	.leaf4 {
+		position: absolute;
+		width: 50%;
+		height: auto;
+		top: 2200px;
+		right:32%;
+		z-index: -10;
+		/* transform: rotate(-30deg); */
+	}
+
+	.leaf5 {
+		position: absolute;
+		width: 45%;
+		height: auto;
+		top: 3000px;
+		left:-3%;
+		z-index: -10;
+		/* transform: rotate(-30deg); */
+	}
+
+	.leaf6 {
+		position: absolute;
+		width: 60%;
+		height: auto;
+		bottom: 430px;
+		right:-25%;
+		z-index: -10;
+		transform: rotate(15deg);
+	}
+
+	.leaf7 {
+		position: absolute;
+		width: 30%;
+		height: auto;
+		top: 13%;
+		left:-3%;
+		z-index: -10;
+		/* transform: rotate(-30deg); */
+	}
+
 
 }
 
@@ -56,3 +123,4 @@
 
 
 }
+

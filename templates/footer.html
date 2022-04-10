@@ -1,62 +1,57 @@
 <head>
     <link rel="stylesheet" href="/static/css/footer.css" />
 </head>
-<br><br>
-<footer id="footer">
+<body>
     {% block footer %}
-    <div class="footer container align-items-center white-out" style="background: #5E719B;">
-        <div class="row container-fluid footer" style=" padding: 15px">
-            <div class="col-sm-2 col-sm-offset-1">
-                <div class="footer row"><b>About</b></a></div>
-                <div class="row"><a href="#">Mission</a></div>
-                <div class="row"><a href="#">Team</a></div>
-                <div class="row"><a href="#">Teaching Process</a></div>
+    <div class="continer-fluid top-papa bottom-papa white-out footer" style="background: #5E719B;">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-1">
+                <div class="footer row bottom-mama"><b>About</b></a></div>
+                <div class="row bottom-mama"><a href="#">Mission</a></div>
+                <div class="row bottom-mama"><a href="#">Team</a></div>
+                <div class="row bottom-mama"><a href="#">Teaching Process</a></div>
             </div>
             <div class="col-sm-2">
-                <div class="row"><b>Services</b></a></div>
-                <div class="row"><a href="#">Courses</a></div>
-                <div class="row"><a href="#">Registration</a></div>
+                <div class="row bottom-mama"><b>Services</b></a></div>
+                <div class="row bottom-mama"><a href="#">Courses</a></div>
+                <div class="row bottom-mama"><a href="#">Registration</a></div>
             </div>
             <div class="col-sm-2">
-                <div class="row"><b>Contact</b></a></div>
-                <div class="row"><a href="#">Request info</a></div>
-                <div class="row">
-                    <div class="col">
+                <div class="row bottom-mama"><b>Contact</b></a></div>
+                <div class="row bottom-mama"><a href="#">Request info</a></div>
+                <div class="row bottom-mama">
+                    <div>
                         <a id="search-button" target="_blank" href="mailto:njbsanchez@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" fill="none">
                             <path d="M28.125 0H3.125C1.40625 0 0.015625 1.40625 0.015625 3.125L0 21.875C0 23.5938 1.40625 25 3.125 25H28.125C29.8438 25 31.25 23.5938 31.25 21.875V3.125C31.25 1.40625 29.8438 0 28.125 0ZM28.125 6.25L15.625 14.0625L3.125 6.25V3.125L15.625 10.9375L28.125 3.125V6.25Z" fill="white"/>
                         </svg>
                         </a>
-                    </div>
-                    <div class="col">
                         <a id="search-button" target="_blank" href="https://www.instagram.com/kamustakids/?hl=en">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
-                            <path d="M7.19444 0C3.36528 0 0.25 3.11528 0.25 6.94444V18.0556C0.25 21.8847 3.36528 25 7.19444 25H18.3056C22.1347 25 25.25 21.8847 25.25 18.0556V6.94444C25.25 3.11528 22.1347 0 18.3056 0H7.19444ZM7.19444 2.77778H18.3056C20.6028 2.77778 22.4722 4.64722 22.4722 6.94444V18.0556C22.4722 20.3528 20.6028 22.2222 18.3056 22.2222H7.19444C4.89722 22.2222 3.02778 20.3528 3.02778 18.0556V6.94444C3.02778 4.64722 4.89722 2.77778 7.19444 2.77778ZM19.6944 4.16667C19.3261 4.16667 18.9728 4.313 18.7124 4.57346C18.4519 4.83393 18.3056 5.1872 18.3056 5.55556C18.3056 5.92391 18.4519 6.27718 18.7124 6.53765C18.9728 6.79811 19.3261 6.94444 19.6944 6.94444C20.0628 6.94444 20.4161 6.79811 20.6765 6.53765C20.937 6.27718 21.0833 5.92391 21.0833 5.55556C21.0833 5.1872 20.937 4.83393 20.6765 4.57346C20.4161 4.313 20.0628 4.16667 19.6944 4.16667ZM12.75 5.55556C8.92083 5.55556 5.80556 8.67083 5.80556 12.5C5.80556 16.3292 8.92083 19.4444 12.75 19.4444C16.5792 19.4444 19.6944 16.3292 19.6944 12.5C19.6944 8.67083 16.5792 5.55556 12.75 5.55556ZM12.75 8.33333C15.0472 8.33333 16.9167 10.2028 16.9167 12.5C16.9167 14.7972 15.0472 16.6667 12.75 16.6667C10.4528 16.6667 8.58333 14.7972 8.58333 12.5C8.58333 10.2028 10.4528 8.33333 12.75 8.33333Z" fill="white"/>
-                            </svg>
-                        </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                                <path d="M7.19444 0C3.36528 0 0.25 3.11528 0.25 6.94444V18.0556C0.25 21.8847 3.36528 25 7.19444 25H18.3056C22.1347 25 25.25 21.8847 25.25 18.0556V6.94444C25.25 3.11528 22.1347 0 18.3056 0H7.19444ZM7.19444 2.77778H18.3056C20.6028 2.77778 22.4722 4.64722 22.4722 6.94444V18.0556C22.4722 20.3528 20.6028 22.2222 18.3056 22.2222H7.19444C4.89722 22.2222 3.02778 20.3528 3.02778 18.0556V6.94444C3.02778 4.64722 4.89722 2.77778 7.19444 2.77778ZM19.6944 4.16667C19.3261 4.16667 18.9728 4.313 18.7124 4.57346C18.4519 4.83393 18.3056 5.1872 18.3056 5.55556C18.3056 5.92391 18.4519 6.27718 18.7124 6.53765C18.9728 6.79811 19.3261 6.94444 19.6944 6.94444C20.0628 6.94444 20.4161 6.79811 20.6765 6.53765C20.937 6.27718 21.0833 5.92391 21.0833 5.55556C21.0833 5.1872 20.937 4.83393 20.6765 4.57346C20.4161 4.313 20.0628 4.16667 19.6944 4.16667ZM12.75 5.55556C8.92083 5.55556 5.80556 8.67083 5.80556 12.5C5.80556 16.3292 8.92083 19.4444 12.75 19.4444C16.5792 19.4444 19.6944 16.3292 19.6944 12.5C19.6944 8.67083 16.5792 5.55556 12.75 5.55556ZM12.75 8.33333C15.0472 8.33333 16.9167 10.2028 16.9167 12.5C16.9167 14.7972 15.0472 16.6667 12.75 16.6667C10.4528 16.6667 8.58333 14.7972 8.58333 12.5C8.58333 10.2028 10.4528 8.33333 12.75 8.33333Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a id="search-button" target="_blank" href="https://www.facebook.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                                    <path d="M22.2738 0H3.22619C1.58333 0 0.25 1.33333 0.25 2.97619V22.0238C0.25 23.6667 1.58333 25 3.22619 25H22.2738C23.9167 25 25.25 23.6667 25.25 22.0238V2.97619C25.25 1.33333 23.9167 0 22.2738 0ZM19.8929 8.92857H18.7024C17.4286 8.92857 16.9167 9.22619 16.9167 10.119V11.9048H19.8929L19.2976 14.881H16.9167V23.8095H13.9405V14.881H11.5595V11.9048H13.9405V10.119C13.9405 7.7381 15.131 5.95238 17.5119 5.95238C19.2381 5.95238 19.8929 6.54762 19.8929 6.54762V8.92857Z" fill="white"/>
+                                </svg>
+                                </a>
                     </div>
-                    <div class="col">
-                        <a id="search-button" target="_blank" href="https://www.facebook.com/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
-                            <path d="M22.2738 0H3.22619C1.58333 0 0.25 1.33333 0.25 2.97619V22.0238C0.25 23.6667 1.58333 25 3.22619 25H22.2738C23.9167 25 25.25 23.6667 25.25 22.0238V2.97619C25.25 1.33333 23.9167 0 22.2738 0ZM19.8929 8.92857H18.7024C17.4286 8.92857 16.9167 9.22619 16.9167 10.119V11.9048H19.8929L19.2976 14.881H16.9167V23.8095H13.9405V14.881H11.5595V11.9048H13.9405V10.119C13.9405 7.7381 15.131 5.95238 17.5119 5.95238C19.2381 5.95238 19.8929 6.54762 19.8929 6.54762V8.92857Z" fill="white"/>
-                        </svg>
-                        </a>
-                    </div>
-                    
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="row"><b>Legal</b></a></div>
-                <div class="row"><a href="#">Term of Service</a></div>
-                <div class="row"><a href="#">Privacy Policy</a></div>
-                <div class="row">  © 2021 Kamusta Kids. All rights reserved.</a></div>
+            <div class="col-sm-4">
+                <div class="row bottom-mama"><b>Legal</b></a></div>
+                <div class="row bottom-mama"><a href="#">Term of Service</a></div>
+                <div class="row bottom-mama"><a href="#">Privacy Policy</a></div>
+                <div class="row bottom-mama">  © 2021 Kamusta Kids. All rights reserved.</a></div>
             </div>
-            <div class="col-sm-2">
-                <div class="foot-image pull-right mx-300" style="align-items: flex-end">
-                    <img src="https://i.ibb.co/0DqRPW6/Logo-Monogram.png" align="bottom" alt="Logo-Monogram" border="0">
+            <div class="col-sm-1 k-logo no-flex">
+                <div class="k-image"> 
+                    <img class="logo-monogram" src="https://i.ibb.co/0DqRPW6/Logo-Monogram.png" alt="Logo-Monogram" border="0">
                 </div>
             </div>
         </div>
     </div>
     {% endblock %}
-</footer>
+</body>
+

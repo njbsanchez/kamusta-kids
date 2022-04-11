@@ -24,7 +24,7 @@ def go_base():
 @app.route("/how-learning-works", methods=['GET'])
 def go_learning():
     """dummy development page"""
-    return render_template("learningworks.html")
+    return render_template("how.html")
 
 @app.route("/courses", methods=['GET'])
 def go_courses():

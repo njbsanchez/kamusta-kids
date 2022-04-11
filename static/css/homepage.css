@@ -9,11 +9,27 @@
 	background-size: 90%;
 	background-repeat: no-repeat;
 	text-align: center;
-	vertical-align: center;
+	min-height:300px;
+	display:flex;
+	justify-content: center;
 }
 
-.blobinside {
-	padding: 20px;
+@media only screen and (min-width: 574px) and (max-width: 768px) {
+	.blob {
+		min-height:375px;
+	}
+}
+
+@media only screen and (min-width: 235px) and (max-width: 574px){
+	.blob {
+		min-height:250px;
+	}
+}
+
+@media only screen and (max-width: 234px){
+	.blob {
+		background-color:#F5D015;
+	}
 }
 
 .blobp {
@@ -26,16 +42,30 @@
 	padding:20px;
 }
 
+.parent {
+	display:flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+.course-box {
+    border-radius: 0px;
+}
+}
+
 @media only screen and (min-width: 768px) {
 	.course-small {
 		display: none;
 	}
+
 	.parent-reviews {
 		margin: 20px;
 		padding: 60px;
 		background-image: url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
 		background-size: cover;
 		background-repeat: no-repeat;
+		justify-content: center;
 	}
 
 	.leaf1 {
@@ -109,7 +139,7 @@
 
 }
 
-@media only screen and (max-width: 574px) {
+@media only screen and (max-width: 573px) {
 
 	.course-small {
 		background: #675e9b;
@@ -119,8 +149,18 @@
 	.course-large {
 		display: none;
 	}
-
-
-
 }
 
+
+@media only screen and (min-width: 574px) {
+	.course-small {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+.leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .leaf6, .leaf7 {
+	display: none;
+}
+}

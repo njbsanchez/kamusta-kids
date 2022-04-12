@@ -16,6 +16,13 @@
 .lean-left {
     text-align:left;
 }
+.lean-center {
+    text-align:center;
+}
+
+.foot {
+	display: flex;
+}
 
 @media only screen and (max-width: 574px) {
 	.lg-only, .md-only {
@@ -73,9 +80,6 @@ h3 {
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 27px;
-
-	color: #000000;
-
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -123,13 +127,13 @@ label {
 	padding: 55px;
 }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px){
 	.text-padding {
 		padding: 30px;
 	}
 	}
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 640px) and (max-width: 767px) {
 	.text-padding {
 		padding: 15px;
 	}
@@ -216,7 +220,7 @@ label {
 		justify-content: space-between;
 	}
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
 	.top-baby {
 		padding-top: 8px;
@@ -229,6 +233,62 @@ label {
 	}
 	.bottom-mama {
 		padding-bottom:16px;
+	}
+	.top-papa {
+		padding-top: 32px;
+	}
+	.bottom-papa {
+		padding-bottom:32px;
+	}
+	.top-grand {
+		padding-top: 64px;
+	}
+	.bottom-grand {
+		padding-bottom:64px;
+	}
+	.mtop-baby {
+		margin-top: 8px;
+	}
+	.mbottom-baby {
+		margin-bottom:8px;
+	}
+	.mtop-mama {
+		margin-top: 16px;
+	}
+	.mbottom-mama {
+		margin-bottom:16px;
+	}
+	.mtop-papa {
+		margin-top: 32px;
+	}
+	.mbottom-papa {
+		margin-bottom:32px;
+	}
+	.mtop-grand {
+		margin-top: 64px;
+	}
+	.mbottom-grand {
+		padding-bottom:64px;
+	}
+	.mr-auto {
+		margin: auto !important;
+		justify-content: space-between;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.top-baby {
+		padding-top: 8px;
+	}
+	.bottom-baby {
+		padding-bottom:8px;
+	}
+	.top-mama {
+		padding-top: 16px;
+	}
+	.bottom-mama {
+		padding-bottom:20px;
 	}
 	.top-papa {
 		padding-top: 32px;
@@ -422,6 +482,12 @@ label {
 	}
 }
 
+@media only screen and (max-width: 767px) {
+	.header-text {
+		justify-content: center;
+	}
+}
+
 .header-image {
 	width:100%;
 	object-fit:cover;
@@ -460,3 +526,19 @@ label {
 
 
 */
+
+@media only screen and (max-width: 768px) {
+
+	.leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .leaf6, .leaf7, .leaf8 {
+		display: none;
+	}
+
+	body {
+		background-image: url("https://i.ibb.co/S60Kg7y/Untitled-design-4.png");
+		background-repeat: repeat-y;
+		background-size:contain;
+	}
+
+	}
+
+

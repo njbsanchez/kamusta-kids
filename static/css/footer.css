@@ -1,11 +1,12 @@
 /* ---------- footer ---------- */
 
 .k-logo {
-        position:relative;
+        position:fixed;
 		height: 50px;
 		bottom: 5%;
-		right: 10%;
+		right: 0%;
 		z-index: 10;
+        opacity: 0.2;
 
 }
 
@@ -30,7 +31,7 @@ footer {
 }
 
 .logo-monogram {
-    width:200px;
+    width:75px;
 }
 a {
     color: white;

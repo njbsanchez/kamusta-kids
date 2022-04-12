@@ -3,15 +3,15 @@
 	{% block head %}
 	<meta carset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
+	<link rel="stylesheet" href="/static/css/style.css" />
 	<link rel="stylesheet" href="/static/css/courses.css" />
+	<link rel="stylesheet" href="/static/css/style-sm.css" />
+	<link rel="stylesheet" href="/static/css/style-md.css" />
 	{% endblock %}
 </head>
 
@@ -19,20 +19,14 @@
 	{% block body%}
 		<div id="page-container">
 			<div id="content-wrap">
-
 				<div class="container-fluid">
 					<div class="header-section flex-container row">
-						<div class="header-cont col-md-6 fill">
-							<img
-								class="header-image"
-								src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png"
-								alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2"
-								border="0"
-							/>
+						<div class="header-cont col-md-6 fill order-lg-0">
+							<img class="header-image" src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png" alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2" border="0">
 						</div>
 
 						<div class="vert-align bottom-mama white-out col-md-6">
-							<div class="text-padding"> 
+							<div class="text-padding top-papa bottom-grand"> 
 								<h1>
 									Courses
 								</h1>
@@ -79,135 +73,90 @@
 					
 					{% for cat in cat_details %}
 						<div class="col-lg-10 col-lg-offset-1">
-						<div class="row row-section gx-4 gx-lg-5 align-items-center">
-							<div class="panel panel-default">
-								<div class="panel-heading container class-category white-out">
-									<h1 class="panel-title" data-toggle="collapse" data-target="#collapseOne">{{cat.cat_name}}</h1>
-									<p>Pre-requisites: {{cat.pre_req}}</p>
-								</div>
-								
-								<div id="collapseOne" class="panel-collapse collapse">
-									{% for d in cat.courses %}
-					
-										<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+							<div class="row row-section gx-4 gx-lg-5 align-items-center">
+								<div class="panel panel-default bottom-papa">
+									<div class="panel-heading container class-category white-out">
+										<h1 class="panel-title" data-toggle="collapse" data-target="#{{cat.cat_name}}">{{cat.cat_name}}</h1>
+										<p>Pre-requisites: {{cat.pre_req}}</p>
+									</div>
+									<div id="{{cat.cat_name}}" class="panel-collapse collapse">
+										{% for d in cat.courses %}
 											<div class="col-lg-10 col-sm-offset-1">
-												<div
-													class="container white-out"
-													style="
-														background: #675e9b;
-														border-radius: 5px;
-														color: #ffffff;
-													"
-													>
-													<div class="row">
-														<div class="col-lg-6">
-															<div style="padding:20px">
-															<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+												<div class="row row-section align-items-center bottom-papa top-papa">
+												
+													<div
+														class="container white-out"
+														style="
+															background: #675e9b;
+															border-radius: 5px;
+															color: #ffffff;
+														"
+														>
+														<div class="row">
+															<div class="col-lg-6">
+																<div style="padding:20px">
+																<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+																</div>
+															</div>
+															<div class="col-lg-6 my-auto" style="padding:50px">
+																<p><b>Level {{d.course_no}}: {{d.course_name}}</b></p>
+																<p>{{d.description}}</p>
+																<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
 															</div>
 														</div>
-														<div class="col-lg-6 my-auto" style="padding:50px">
-															<p><b>{{d.course_name}}</b></p>
-															<p>{{d.description}}</p>
-															<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
-														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									{%endfor%}	
-								<div class="panel-body">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-								  </div>
+										{%endfor%}	
 								</div>
-							  </div>
-							  <div id="collapseOne" class="panel-collapse collapse">
-								<div class="panel-body">
-								  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
 								</div>
-							  </div>
-							</div>
-
-							<div class="panel" style="display:none;">
-								{% for d in cat.courses %}
-					
-									<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
-										<div class="col-lg-10 col-sm-offset-1">
-											<div
-												class="container white-out"
-												style="
-													background: #675e9b;
-													border-radius: 5px;
-													color: #ffffff;
-												"
-												>
-												<div class="row">
-													<div class="col-lg-6">
-														<div style="padding:20px">
-														<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
-														</div>
-													</div>
-													<div class="col-lg-6 my-auto" style="padding:50px">
-														<p><b>{{d.course_name}}</b></p>
-														<p>{{d.description}}</p>
-														<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								{%endfor%}	
 							</div>
 						</div>
-
 					{%endfor%}	
 								
+				
 				</div>
-			</div>
-		</div>
-		
-
-	<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
-		<div class="col-lg-10 col-sm-offset-1">
-			<div
-				class="container white-out"
-				style="
-					background: #675e9b;
-					border-radius: 5px;
-					color: #ffffff;
-				"
-			>
-				<div class="row">
-					<div class="col-lg-6 my-auto" style="padding:50px">
-						<p><b>Additional levels coming soon</b></p>
-						<p>Advance courses will be available as more kids enroll and grow in the program!</p>
-						<a target="_blank" href= "https://docs.google.com/forms/d/e/1FAIpQLSci_G1TxJ17fmuQtDMvaw17c4SrTznxi41OJwVdf9E2MWvT-A/viewform"><button class="blueButton-lg" style="margin: 0px; width:100%">Notify me</button></a>
-					</div>
-					<div class="col-lg-6">
-						<div style="padding:20px">
-						<img src="https://i.ibb.co/CsQ4bZS/austin-nicomedez-0k-UCCQm1-VE4-unsplash-1.png" alt="random image" style="width: 100%; border-radius: 5px;" border="10"/>
+			
+				<div class="container-fluid top-mama bottom-baby align-items-center">
+					<div class="col-lg-10 col-sm-offset-1">
+						<div
+							class="container white-out top-mama bottom-mama"
+							style="
+								background: #675e9b;
+								border-radius: 5px;
+								color: #ffffff; display:flex
+							">
+							<div class="col-lg-6 my-auto text-padding vert-align">
+								<p><b>Additional levels coming soon</b></p>
+								<p>Advance courses will be available as more kids enroll and grow in the program!</p>
+								<a target="_blank" href= "https://docs.google.com/forms/d/e/1FAIpQLSci_G1TxJ17fmuQtDMvaw17c4SrTznxi41OJwVdf9E2MWvT-A/viewform"><button class="blueButton-lg" style="margin: 0px; width:100%">Notify me</button></a>
+							</div>
+							<div class="col-lg-6">
+								<div class="course-img">
+								<img src="https://i.ibb.co/CsQ4bZS/austin-nicomedez-0k-UCCQm1-VE4-unsplash-1.png" alt="random image" style="width: 100%; border-radius: 5px;" border="10"/>
+								</div>
+							</div>
 						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<script>
-		var acc = document.getElementsByClassName("accordion");
-		var i;
-		
-		for (i = 0; i < acc.length; i++) {
-		  acc[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var panel = this.nextElementSibling;
-			if (panel.style.display === "block") {
-			  panel.style.display = "none";
-			} else {
-			  panel.style.display = "block";
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+				panel.style.display = "none";
+				} else {
+				panel.style.display = "block";
+				}
+			});
 			}
-		  });
-		}
 		</script>
 
 	{% endblock %}

@@ -41,6 +41,44 @@ h1 {
 }
 
 
+.panel-title {
+  position: relative;
+  padding: 10px 15px;
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+  color: #ffffff;
+}
+  
+.panel-title::before {
+  content: "\f107";
+  color: #ffffff;
+  top: 50%;
+  left: 2%;
+  position: absolute;
+  font-family: "FontAwesome"
+}
+
+.panel-title[aria-expanded="true"]::before {
+  content: "\f106";
+}
+
+.panel-heading-full.panel-heading {
+  padding: 0;
+}
+
+.panel-default>.panel-heading {
+   background: #5e719b
+}
+
+.panel-default {
+    border-color: transparent;
+}
+
+
+
 /* large view */
 @media only screen and (min-width: 575px) {
 

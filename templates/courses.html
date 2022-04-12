@@ -1,127 +1,170 @@
 {% extends 'base.html' %} {% block title %}Courses{% endblock %}
 <head>
-	<style>
+	{% block head %}
+	<meta carset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	</style>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+	<link rel="stylesheet" href="/static/css/courses.css" />
+	{% endblock %}
 </head>
 
 <body>
 	{% block body%}
+		<div id="page-container">
+			<div id="content-wrap">
 
-
-	<div class="wrapper container">
-		<div class="header-section row">
-			
-			<div class="col-lg-6 order-lg-0">
-				<img
-					class="header-image"
-					src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png"
-					alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2"
-					border="0"
-				/>
-			</div>
-
-			<div class="headtext col-lg-6 order-lg-1 top-baby bottom-mama">
 				<div class="container-fluid">
-					<h1 class="white-out" style="text-align: center">
-						Courses
-					</h1>
-					<p class="white-out lean-left">
-						Our virtual Tagalog lessons cover practical themes to reinforce speaking at home. As well as, ethnic customs to explore Filipino roots.
-					</p>
-				</div>
-			</div>			
-		</div>
+					<div class="header-section flex-container row">
+						<div class="header-cont col-md-6 fill">
+							<img
+								class="header-image"
+								src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png"
+								alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2"
+								border="0"
+							/>
+						</div>
 
-
-	<div class="row row-section align-items-center top-mama">
-		<div class="col-lg-10 col-lg-offset-1">
-			<div
-				class="container white-out course-section-header">
-				<h1>All Courses</h1>
-			</div>
-		</div>
-	</div>
-	<div class="row row-section top-mama">
-		<div class="col-md-3">
-			<p><b>Ages</b></p>
-			<p>4 - 11 years old, mixed age classes</p>
-		</div>
-		<div class="col-md-3">
-			<p><b>Price</b></p>
-			<p>
-				USD $13/class (Total $109/course) All courses are non-refundable
-			</p>
-		</div>
-		<div class="col-md-3">
-			<p><b>Class Duration</b></p>
-			<p>Once per week, for 8 weeks</p>
-			<p>
-				See enrollment page for specific class dates offered. Miss a
-				class? We’ll send you a private link to the class recording
-			</p>
-		</div>
-		<div class="col-md-3">
-			<p><b>Seats</b></p>
-			<p>8 max. per class (space is limited!)</p>
-		</div>
-
-	</div>
-
-	{% for cat in cat_details %}
-
-		
-			<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
-				<button class="accordion">
-				<div class="col-lg-10 col-sm-offset-1">
-					<div
-						class="container white-out"
-						style="
-							text-align: center;
-							background: #5e719b;
-							border-radius: 5px;
-							color: #ffffff;
-						"
-					>
-						<h1>{{cat.cat_name}}</h1>
-						<p>Pre-requisites: {{cat.pre_req}}</p>
+						<div class="vert-align bottom-mama white-out col-md-6">
+							<div class="text-padding"> 
+								<h1>
+									Courses
+								</h1>
+								<p>
+									Our virtual Tagalog lessons cover practical themes to reinforce speaking at home. As well as, ethnic customs to explore Filipino roots.
+								</p>
+							</div>
+						</div>			
 					</div>
 				</div>
-			
-		</button>
-	</div>
-		<div class="panel" style="display:none;">
-			{% for d in cat.courses %}
 
-				<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
-					<div class="col-lg-10 col-sm-offset-1">
-						<div
-							class="container white-out"
-							style="
-								background: #675e9b;
-								border-radius: 5px;
-								color: #ffffff;
-							"
-						>
-							<div class="row">
-								<div class="col-lg-6">
-									<div style="padding:20px">
-									<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
-									</div>
-								</div>
-								<div class="col-lg-6 my-auto" style="padding:50px">
-									<p><b>{{d.course_name}}</b></p>
-									<p>{{d.description}}</p>
-									<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
-								</div>
+				<div class="container-fluid top-grand bottom-baby">
+					<div class="col-lg-10 col-lg-offset-1">
+						<div class="container white-out course-section-header">
+							<h1>All Courses</h1>
+						</div>
+					</div>
+					<div class="col-lg-10 col-lg-offset-1">
+						<div class="container mtop-grand top-mama bottom-mama white-out course-section">
+							<div class="col-md-3">
+								<p><b>Ages</b></p>
+								<p>4 - 11 years old, mixed age classes</p>
+							</div>
+							<div class="col-md-3">
+								<p><b>Price</b></p>
+								<p>
+									USD $13/class (Total $109/course) All courses are non-refundable
+								</p>
+							</div>
+							<div class="col-md-3">
+								<p><b>Class Duration</b></p>
+								<p>Once per week, for 8 weeks</p>
+								
+							</div>
+							<div class="col-md-3">
+								<p><b>Seats</b></p>
+								<p>8 max. per class (space is limited!)</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			{%endfor%}	
-		</div>
+			
+				<div class="container-fluid top-papa bottom-baby">
+					
+					{% for cat in cat_details %}
+						<div class="col-lg-10 col-lg-offset-1">
+						<div class="row row-section gx-4 gx-lg-5 align-items-center">
+							<div class="panel panel-default">
+								<div class="panel-heading container class-category white-out">
+									<h1 class="panel-title" data-toggle="collapse" data-target="#collapseOne">{{cat.cat_name}}</h1>
+									<p>Pre-requisites: {{cat.pre_req}}</p>
+								</div>
+								
+								<div id="collapseOne" class="panel-collapse collapse">
+									{% for d in cat.courses %}
+					
+										<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+											<div class="col-lg-10 col-sm-offset-1">
+												<div
+													class="container white-out"
+													style="
+														background: #675e9b;
+														border-radius: 5px;
+														color: #ffffff;
+													"
+													>
+													<div class="row">
+														<div class="col-lg-6">
+															<div style="padding:20px">
+															<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+															</div>
+														</div>
+														<div class="col-lg-6 my-auto" style="padding:50px">
+															<p><b>{{d.course_name}}</b></p>
+															<p>{{d.description}}</p>
+															<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									{%endfor%}	
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+								  </div>
+								</div>
+							  </div>
+							  <div id="collapseOne" class="panel-collapse collapse">
+								<div class="panel-body">
+								  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+								</div>
+							  </div>
+							</div>
 
-	{%endfor%}	
+							<div class="panel" style="display:none;">
+								{% for d in cat.courses %}
+					
+									<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
+										<div class="col-lg-10 col-sm-offset-1">
+											<div
+												class="container white-out"
+												style="
+													background: #675e9b;
+													border-radius: 5px;
+													color: #ffffff;
+												"
+												>
+												<div class="row">
+													<div class="col-lg-6">
+														<div style="padding:20px">
+														<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+														</div>
+													</div>
+													<div class="col-lg-6 my-auto" style="padding:50px">
+														<p><b>{{d.course_name}}</b></p>
+														<p>{{d.description}}</p>
+														<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								{%endfor%}	
+							</div>
+						</div>
+
+					{%endfor%}	
+								
+				</div>
+			</div>
+		</div>
+		
 
 	<div class="row row-section gx-4 gx-lg-5 align-items-center" style="padding-top:25px; padding-bottom:25px;">
 		<div class="col-lg-10 col-sm-offset-1">

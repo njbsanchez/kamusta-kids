@@ -38,14 +38,14 @@
 					</div>
 				</div>
 
-				<div class="container-fluid top-grand bottom-baby">
+				<div class="container-fluid top-papa">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="container white-out course-section-header">
 							<h1>All Courses</h1>
 						</div>
 					</div>
 					<div class="col-lg-10 col-lg-offset-1">
-						<div class="container mtop-grand top-mama bottom-mama white-out course-section">
+						<div class="container mtop-papa top-mama bottom-mama white-out course-section">
 							<div class="col-md-3">
 								<p><b>Ages</b></p>
 								<p>4 - 11 years old, mixed age classes</p>
@@ -69,55 +69,58 @@
 					</div>
 				</div>
 			
-				<div class="container-fluid top-papa bottom-baby">
+				<div class="container-fluid top-papa">
 					
 					{% for cat in cat_details %}
 						<div class="col-lg-10 col-lg-offset-1">
 							<div class="row row-section gx-4 gx-lg-5 align-items-center">
-								<div class="panel panel-default bottom-papa">
+								<div class="panel panel-default bottom-mama">
 									<div class="panel-heading container class-category white-out">
 										<h1 class="panel-title" data-toggle="collapse" data-target="#{{cat.cat_name}}">{{cat.cat_name}}</h1>
 										<p>Pre-requisites: {{cat.pre_req}}</p>
 									</div>
-									<div id="{{cat.cat_name}}" class="panel-collapse collapse">
-										{% for d in cat.courses %}
-											<div class="col-lg-10 col-sm-offset-1">
-												<div class="row row-section align-items-center bottom-papa top-papa">
-												
-													<div
-														class="container white-out"
-														style="
-															background: #675e9b;
-															border-radius: 5px;
-															color: #ffffff;
-														"
-														>
-														<div class="row">
-															<div class="col-lg-6">
-																<div style="padding:20px">
-																<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+										<div id="{{cat.cat_name}}" class="panel-collapse collapse">
+											<div class="panel-body">
+												{% for d in cat.courses %}
+													<div class="col-lg-10 col-sm-offset-1">
+														<div class="row row-section align-items-center bottom-baby top-mama">
+														
+															<div
+																class="container white-out"
+																style="
+																	background: #675e9b;
+																	border-radius: 5px;
+																	color: #ffffff;
+																"
+																>
+																<div class="row">
+																	<div class="col-lg-6">
+																		<div class="course-img">
+																		<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+																		</div>
+																	</div>
+																	<div class="col-lg-6 vert-align">
+																		<p><b>Level {{d.course_no}}: {{d.course_name}}</b></p>
+																		<p>{{d.description}}</p>
+																		<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
+																	</div>
 																</div>
-															</div>
-															<div class="col-lg-6 my-auto" style="padding:50px">
-																<p><b>Level {{d.course_no}}: {{d.course_name}}</b></p>
-																<p>{{d.description}}</p>
-																<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
 															</div>
 														</div>
 													</div>
-												</div>
-											</div>
-										{%endfor%}	
-								</div>
+												{%endfor%}
+											</div>	
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					{%endfor%}	
+						{%endfor%}	
+					
 								
 				
 				</div>
 			
-				<div class="container-fluid top-mama bottom-baby align-items-center">
+				<div class="container-fluid top- bottom-baby align-items-center">
 					<div class="col-lg-10 col-sm-offset-1">
 						<div
 							class="container white-out top-mama bottom-mama"

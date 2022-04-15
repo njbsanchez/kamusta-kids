@@ -24,6 +24,7 @@
 	display: flex;
 }
 
+
 @media only screen and (max-width: 574px) {
 	.lg-only, .md-only {
 		display: none;
@@ -161,6 +162,12 @@ label {
 	height: auto;
 	z-index: -1;
 	padding: 0px;
+}
+
+.ig-posts {
+	background-color: #F5D015;
+	border-radius: 40px;
+	padding:20px;
 }
 
 /* --------- spacing ---------- */
@@ -506,6 +513,13 @@ label {
     background: #675e9b;
     border-radius: 5px;
     color: #ffffff;
+}
+
+.request-box {
+	background: #675e9b;
+    border-radius: 10px;
+    color: #ffffff;
+
 }
 
 .course-text {

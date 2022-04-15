@@ -51,6 +51,7 @@
 
 .course-box {
     border-radius: 0px;
+
 }
 }
 
@@ -156,7 +157,7 @@
 	.course-small {
 		display: none;
 	}
-}
+
 
 @media only screen and (max-width: 768px) {
 

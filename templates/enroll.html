@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% block title %}About Us{% endblock %}
+<head> 
+	{% block head %}
+		<meta carset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+		<link rel="stylesheet" href="/static/css/request.css" />
+	{% endblock %}
+</head>
+
+<body>
+	{% block body%}
+	<div id="page-container">
+		<div id="content-wrap">
+			<div class="container-fluid">
+				<div class="header-section flex-container row">
+					<div class="vert-align bottom-mama white-out col-md-6 order-xs-1 order-md-0">
+						<div class="text-padding top-papa bottom-papa"> 
+							<h1>Enrollment</h1>
+							<p>Reserve a virtual seat through the application below. Once approved, we’ll contact you with payment and class details. Welcome to Kamusta Kids!</p>
+						</div>
+					</div>		
+					<div class="header-cont col-md-6 fill order-xs-0 order-md-1">
+						<img class="header-image" src="https://i.ibb.co/cgHP0Tf/rendy-novantino-Cj-Lvl-J8-FE-unsplash.png" alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2" border="0">
+					</div>	
+				</div>
+			</div>
+			<div class="container-fluid top-mama bottom-baby">
+				</div>
+				<div class="row lean-right top-baby bottom-baby">
+					<div class="col-md-8 col-md-offset-2 col-xs-12 top-mama bottom-baby">
+						<h1>Enrollment Inquiry Form</h1>
+					</div>
+					<div class="col-md-8 col-md-offset-2 col-xs-12 top-mama request-box">
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerGsZUiO0tjr8tBDL4FZvjSQG7PHJoX1Y5gHWiNE609Yicaw/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	{% endblock %}
+	
+</body>

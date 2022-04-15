@@ -38,30 +38,33 @@
 					</div>
 				</div>
 
-				<div class="container-fluid top-papa">
+				<div class="container-fluid mtop-papa sm-format">
 					<div class="col-lg-10 col-lg-offset-1">
-						<div class="container white-out course-section-header">
+						<div class="container class-category white-out course-section-header">
 							<h1>All Courses</h1>
 						</div>
 					</div>
-					<div class="col-lg-10 col-lg-offset-1">
-						<div class="container mtop-papa top-mama bottom-mama white-out course-section">
-							<div class="col-md-3">
+				</div>
+
+				<div class="container-fluid mtop-papa sm-format">
+					<div class="col-sm-10 offset-sm-1">
+						<div class="container top-mama bottom-mama white-out course-section">
+							<div class="col-sm-3">
 								<p><b>Ages</b></p>
 								<p>4 - 11 years old, mixed age classes</p>
 							</div>
-							<div class="col-md-3">
+							<div class="col-sm-3">
 								<p><b>Price</b></p>
 								<p>
 									USD $13/class (Total $109/course) All courses are non-refundable
 								</p>
 							</div>
-							<div class="col-md-3">
+							<div class="col-sm-3">
 								<p><b>Class Duration</b></p>
 								<p>Once per week, for 8 weeks</p>
 								
 							</div>
-							<div class="col-md-3">
+							<div class="col-sm-3">
 								<p><b>Seats</b></p>
 								<p>8 max. per class (space is limited!)</p>
 							</div>
@@ -69,20 +72,20 @@
 					</div>
 				</div>
 			
-				<div class="container-fluid top-papa">
+				<div class="course-large container-fluid top-papa">
 					
 					{% for cat in cat_details %}
 						<div class="col-lg-10 col-lg-offset-1">
-							<div class="row row-section gx-4 gx-lg-5 align-items-center">
+							<div class="container align-items-center">
 								<div class="panel panel-default bottom-mama">
-									<div class="panel-heading container class-category white-out">
+									<div class="panel-heading row class-category white-out">
 										<h1 class="panel-title" data-toggle="collapse" data-target="#{{cat.cat_name}}">{{cat.cat_name}}</h1>
 										<p>Pre-requisites: {{cat.pre_req}}</p>
 									</div>
 										<div id="{{cat.cat_name}}" class="panel-collapse collapse">
 											<div class="panel-body">
 												{% for d in cat.courses %}
-													<div class="col-lg-10 col-sm-offset-1">
+													<div class="col-lg-12">
 														<div class="row row-section align-items-center bottom-baby top-mama">
 														
 															<div
@@ -119,6 +122,58 @@
 								
 				
 				</div>
+				
+				<div class="course-small container-fluid top-papa">
+					
+					{% for cat in cat_details %}
+						<div class="col-lg-10 col-lg-offset-1">
+							<div class="container align-items-center">
+								<div class="panel panel-default bottom-mama">
+									<div class="panel-heading row class-category white-out">
+										<h1 class="panel-title" data-toggle="collapse" data-target="#{{cat.cat_name}}">{{cat.cat_name}}</h1>
+										<p>Pre-requisites: {{cat.pre_req}}</p>
+									</div>
+										<div id="{{cat.cat_name}}" class="panel-collapse collapse">
+											<div class="panel-body">
+												{% for d in cat.courses %}
+													<div class="col-lg-12">
+														<div class="row row-section align-items-center bottom-baby top-mama">
+														
+															<div
+																class="container white-out"
+																style="
+																	background: #675e9b;
+																	border-radius: 5px;
+																	color: #ffffff;
+																"
+																>
+																<div class="row">
+																	<div class="col-lg-6">
+																		<div class="course-img">
+																		<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
+																		</div>
+																	</div>
+																	<div class="col-lg-6 vert-align">
+																		<p><b>Level {{d.course_no}}: {{d.course_name}}</b></p>
+																		<p>{{d.description}}</p>
+																		<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												{%endfor%}
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						{%endfor%}	
+					
+								
+				
+				</div>
+
 			
 				<div class="container-fluid top- bottom-baby align-items-center">
 					<div class="col-lg-10 col-sm-offset-1">

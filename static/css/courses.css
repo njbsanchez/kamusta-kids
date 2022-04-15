@@ -1,4 +1,9 @@
 
+body {
+  background-image: url("https://i.ibb.co/S60Kg7y/Untitled-design-4.png");
+  background-repeat: repeat-y;
+  background-size:contain;
+}
 
 h1 {
     font-family: Suez One;
@@ -84,8 +89,15 @@ h1 {
 @media only screen and (min-width: 575px) {
 
 
-	.course-section .course-section-header {
+	.course-section, .course-section-header {
 		border-radius: 5px;
 	}
 
+}
+
+@media only screen and (max-width: 768px) {
+
+  .sm-format {
+    background: #5e719b
+  }
 }

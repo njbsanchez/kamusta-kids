@@ -38,10 +38,10 @@ def request_info():
     """dummy development page"""
     return render_template("request_info.html")
 
-@app.route("/go-enroll", methods=['GET'])
+@app.route("/enroll", methods=['GET'])
 def go_enroll():
     """dummy development page"""
-    return render_template("coming_soon.html")
+    return render_template("enroll.html")
 
 @app.route("/coming-soon", methods=['GET'])
 def coming_soon():

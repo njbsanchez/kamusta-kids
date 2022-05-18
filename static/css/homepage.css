@@ -1,7 +1,8 @@
 
+
 .blob {
 		
-	font-size: 14px;
+	font-size: 12px;
 	margin: 0px;
 	padding: 40px;
 	background-image: url('https://i.ibb.co/mHW4wyK/yellow-blob.png');
@@ -67,6 +68,10 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		justify-content: center;
+	}
+
+	body {
+		background-image: none;
 	}
 
 	.leaf1 {
@@ -142,11 +147,6 @@
 
 @media only screen and (max-width: 573px) {
 
-	.course-small {
-		background: #675e9b;
-		color: #ffffff;
-	}
-
 	.course-large {
 		display: none;
 	}
@@ -158,6 +158,7 @@
 		display: none;
 	}
 
+}
 
 @media only screen and (max-width: 768px) {
 

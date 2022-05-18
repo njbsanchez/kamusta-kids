@@ -489,11 +489,6 @@ label {
 	}
 }
 
-@media only screen and (max-width: 767px) {
-	.header-text {
-		justify-content: center;
-	}
-}
 
 .header-image {
 	width:100%;
@@ -503,6 +498,14 @@ label {
 
 .header-section{
     background: #5E719B;
+}
+
+@media only screen and (max-width: 767px) {
+	.header-section .text-padding h1 {
+		text-align:center;;
+	}
+
+
 }
 
 .vert-align {

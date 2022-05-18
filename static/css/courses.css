@@ -5,14 +5,6 @@ body {
   background-size:contain;
 }
 
-h1 {
-    font-family: Suez One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 47px;
-    color: #ffffff;
-}
 
 .white-out {
     color: #ffffff;
@@ -29,7 +21,12 @@ h1 {
 }
 
 .course-section {
+	background: #675E9B;
+}
+
+.detail-section {
 	background: #5e719b;
+  padding:25px;
 }
 
 .class-category {
@@ -37,6 +34,11 @@ h1 {
     background: #5e719b;
     border-radius: 5px;
     color: #ffffff;
+}
+
+.add-levels {
+  background: #675e9b;
+  color: #ffffff;
 }
 
 .class_level {
@@ -100,4 +102,27 @@ h1 {
   .sm-format {
     background: #5e719b
   }
+
+  .detail-section {
+    padding:0px;
+  }
+
+  .class-category {
+    border-radius: 0px;
+  }
+}
+
+@media only screen and (max-width: 573px) {
+
+	.course-large {
+		display: none;
+	}
+}
+
+
+@media only screen and (min-width: 574px) {
+	.course-small {
+		display: none;
+	}
+
 }

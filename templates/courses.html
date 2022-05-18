@@ -22,7 +22,7 @@
 				<div class="container-fluid">
 					<div class="header-section flex-container row">
 						<div class="header-cont col-md-6 fill order-lg-0">
-							<img class="header-image" src="https://i.ibb.co/CKVGT29/mi-pham-0-DPyb8t-Kf-I-unsplash-2.png" alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2" border="0">
+							<img class="header-image" src="https://i.ibb.co/WgQhQcC/1-Jerry-Wang-1.png" alt="mi-pham-0-DPyb8t-Kf-I-unsplash-2" border="0">
 						</div>
 
 						<div class="vert-align bottom-mama white-out col-md-6">
@@ -47,26 +47,28 @@
 				</div>
 
 				<div class="container-fluid mtop-papa sm-format">
-					<div class="col-sm-10 offset-sm-1">
-						<div class="container top-mama bottom-mama white-out course-section">
-							<div class="col-sm-3">
-								<p><b>Ages</b></p>
-								<p>4 - 11 years old, mixed age classes</p>
-							</div>
-							<div class="col-sm-3">
-								<p><b>Price</b></p>
-								<p>
-									USD $13/class (Total $109/course) All courses are non-refundable
-								</p>
-							</div>
-							<div class="col-sm-3">
-								<p><b>Class Duration</b></p>
-								<p>Once per week, for 8 weeks</p>
-								
-							</div>
-							<div class="col-sm-3">
-								<p><b>Seats</b></p>
-								<p>8 max. per class (space is limited!)</p>
+					<div class="col-lg-12 col-lg-offset-0">
+						<div class="container white-out top-baby bottom-baby detail-section">
+							<div class="row">
+								<div class="col-sm-3">
+									<h4><b>Ages</b></h4>
+									<p>4 - 11 years old, mixed age classes</p>
+									<h4><b>Seats</b></h4>
+									<p>8 max. per class (space is limited!)</p>
+								</div>
+								<div class="col-sm-3">
+									<h4><b>Price</b><h4>
+									<p>USD $13/class (Total $109/course) All courses are non-refundable
+									</p>
+								</div>
+								<div class="col-sm-6">
+									<h4><b>Class Duration</b></h4>
+									<p>Once per week, for 8 weeks</p>
+									<p> See enrollment page for specific class dates offered. Miss a class? We’ll send you a private link to the class recording</p>
+								</div>
+								<div class="col-sm-3">
+									
+								</div>
 							</div>
 						</div>
 					</div>
@@ -105,7 +107,7 @@
 																	<div class="col-lg-6 vert-align">
 																		<p><b>Level {{d.course_no}}: {{d.course_name}}</b></p>
 																		<p>{{d.description}}</p>
-																		<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
+																		<a href="/enroll"><button class="yellowButton-lg">Reserve a spot</button></a>
 																	</div>
 																</div>
 															</div>
@@ -123,60 +125,50 @@
 				
 				</div>
 				
-				<div class="course-small container-fluid top-papa">
-					
-					{% for cat in cat_details %}
-						<div class="col-lg-10 col-lg-offset-1">
-							<div class="container align-items-center">
-								<div class="panel panel-default bottom-mama">
-									<div class="panel-heading row class-category white-out">
-										<h1 class="panel-title" data-toggle="collapse" data-target="#{{cat.cat_name}}">{{cat.cat_name}}</h1>
-										<p>Pre-requisites: {{cat.pre_req}}</p>
-									</div>
-										<div id="{{cat.cat_name}}" class="panel-collapse collapse">
-											<div class="panel-body">
-												{% for d in cat.courses %}
-													<div class="col-lg-12">
-														<div class="row row-section align-items-center bottom-baby top-mama">
-														
-															<div
-																class="container white-out"
-																style="
-																	background: #675e9b;
-																	border-radius: 5px;
-																	color: #ffffff;
-																"
-																>
-																<div class="row">
-																	<div class="col-lg-6">
-																		<div class="course-img">
-																		<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
-																		</div>
-																	</div>
-																	<div class="col-lg-6 vert-align">
-																		<p><b>Level {{d.course_no}}: {{d.course_name}}</b></p>
-																		<p>{{d.description}}</p>
-																		<a target="_blank" href="{{d.registration_link}}"><button class="yellowButton-lg">Reserve a spot</button></a>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												{%endfor%}
-											</div>	
-										</div>
-									</div>
+
+				{% for cat in cat_details %}
+					<div class="course-small class-category container-fluid white-out mtop-mama mbottom-mama">
+						<div class="col-lg-12">
+							<h1>{{cat.cat_name}}</h1>
+							<p>Pre-requisites: {{cat.pre_req}}</p>
+						</div>
+					</div>
+
+					{% for d in cat.courses %}
+						<div class="course-small top-baby course-section container-fluid white-out mtop-mama mbottom-mama">
+							<div class="col">
+								<div class="course-img">
+								<img src="{{d.image_url}}" alt="random image for {{d.course_name}} course." style="width: 100%; border-radius: 5px;" border="10"/>
 								</div>
 							</div>
-						{%endfor%}	
+							<div class="col-lg-6 vert-align bottom-mama">
+								<p><b>Level {{d.course_no}}: {{d.course_name}}</b></p>
+								<p>{{d.description}}</p>
+								<a href="/enroll"><button class="yellowButton-lg">Reserve a spot</button></a>
+							</div>
+						</div>
+					{%endfor%}
+				{%endfor%}	
 					
 								
 				
+				<div class="course-small white-out add-levels container-fluid top-mama align-items-center">
+					
+					<div class="col top-baby bottom-baby text-padding vert-align" style="padding:10px">
+						<p><b>Additional levels coming soon</b></p>
+						<p>Advance courses will be available as more kids enroll and grow in the program!</p>
+						<a href= "/enroll"><button class="blueButton-lg" style="">Notify me</button></a>
+					</div>
+					<div class="col bottom-mama">
+						<div class="course-img">
+						<img src="https://i.ibb.co/dBYjnvV/addtl.png" alt="random image" style="width: 100%; border-radius: 5px;" border="10"/>
+						</div>
+					</div>
 				</div>
 
 			
-				<div class="container-fluid top- bottom-baby align-items-center">
-					<div class="col-lg-10 col-sm-offset-1">
+				<div class="course-large container-fluid top-mama bottom-baby align-items-center">
+					<div class="col-md-10 col-sm-offset-1">
 						<div
 							class="container white-out top-mama bottom-mama"
 							style="
@@ -184,19 +176,21 @@
 								border-radius: 5px;
 								color: #ffffff; display:flex
 							">
-							<div class="col-lg-6 my-auto text-padding vert-align">
+							<div class="col-md-6 text-padding vert-align">
 								<p><b>Additional levels coming soon</b></p>
 								<p>Advance courses will be available as more kids enroll and grow in the program!</p>
-								<a target="_blank" href= "https://docs.google.com/forms/d/e/1FAIpQLSci_G1TxJ17fmuQtDMvaw17c4SrTznxi41OJwVdf9E2MWvT-A/viewform"><button class="blueButton-lg" style="margin: 0px; width:100%">Notify me</button></a>
+								<a href= "/enroll"><button class="blueButton-lg" style="margin: 0px; width:100%">Notify me</button></a>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-md-6">
 								<div class="course-img">
-								<img src="https://i.ibb.co/CsQ4bZS/austin-nicomedez-0k-UCCQm1-VE4-unsplash-1.png" alt="random image" style="width: 100%; border-radius: 5px;" border="10"/>
+								<img src="https://i.ibb.co/dBYjnvV/addtl.png" alt="random image" style="width: 100%; border-radius: 5px;" border="10"/>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+
 			</div>
 		</div>
 
